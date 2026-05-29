@@ -521,6 +521,26 @@
     .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--navy); color: #fff; border-color: var(--navy); }
     .faq-item.open .faq-q { color: var(--navy); }
 
+    /* ===== BLOG ===== */
+    #blog { background: #fff; }
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    @media(max-width:960px){ .blog-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:640px){ .blog-grid { grid-template-columns: 1fr; } }
+    .blog-card {
+      background: #fff; border: 1px solid var(--gray-200); border-radius: 14px;
+      overflow: hidden; transition: all 0.3s; display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--gray-300); }
+    .blog-card-top { height: 6px; background: var(--gold); flex-shrink: 0; }
+    .blog-card-body { padding: 28px 24px 24px; flex: 1; display: flex; flex-direction: column; }
+    .blog-card-date { font-size: 0.75rem; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .blog-card-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; color: var(--gray-900); line-height: 1.45; margin-bottom: 10px; }
+    .blog-card-desc { color: var(--gray-500); font-size: 0.85rem; line-height: 1.65; flex: 1; margin-bottom: 16px; }
+    .blog-card-link { color: var(--navy); font-weight: 700; font-size: 0.82rem; text-decoration: none; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 4px; transition: color 0.2s; }
+    .blog-card-link:hover { color: var(--gold); }
+    .blog-card-link .arrow { transition: transform 0.2s; display: inline-block; }
+    .blog-card-link:hover .arrow { transform: translateX(3px); }
+
     /* ===== QUOTE ===== */
     #quote { background: var(--navy); }
     #quote .section-label { color: var(--gold-light); }
@@ -646,6 +666,7 @@
     <li><a href="#certs">Certifications</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="#blog">Insights</a></li>
     <li><a href="#quote" class="nav-cta">Get Quote</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -1023,6 +1044,62 @@
       <button class="faq-q">Can you provide technical documents?<span class="faq-icon">+</span></button>
       <div class="faq-a"><div class="faq-a-inner">Yes. We can provide datasheets, test reports, packing lists, certificates and other export documents according to project requirements.</div></div>
     </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div style="text-align:center;margin-bottom:52px">
+    <div class="section-label"><span class="section-label-line"></span>Knowledge Hub</div>
+    <h2>Cable <em>Insights</em></h2>
+    <p class="section-sub" style="margin:0 auto">Technical articles and buying guides for procurement professionals and project engineers.</p>
+  </div>
+  <div class="blog-grid reveal">
+    <a href="blog/buyer-guide-how-to-choose-power-cable.html" class="blog-card" style="text-decoration:none;color:inherit">
+      <div class="blog-card-top"></div>
+      <div class="blog-card-body">
+        <div class="blog-card-date">May 29, 2026</div>
+        <div class="blog-card-title">How to Choose the Right Power Cable: A Complete Buyer's Guide</div>
+        <div class="blog-card-desc">Learn the key factors — voltage, conductor material, insulation, armouring — that determine which cable fits your project requirements.</div>
+        <span class="blog-card-link">Read Article <span class="arrow">→</span></span>
+      </div>
+    </a>
+    <a href="blog/armoured-vs-unarmoured-cable-guide.html" class="blog-card" style="text-decoration:none;color:inherit">
+      <div class="blog-card-top"></div>
+      <div class="blog-card-body">
+        <div class="blog-card-date">May 28, 2026</div>
+        <div class="blog-card-title">Armoured vs Unarmoured Cable: Which One Does Your Project Need?</div>
+        <div class="blog-card-desc">SWA, AWA, or unarmoured — understand the differences and make the right choice for underground, outdoor, or indoor installations.</div>
+        <span class="blog-card-link">Read Article <span class="arrow">→</span></span>
+      </div>
+    </a>
+    <a href="blog/iec-cable-standards-explained.html" class="blog-card" style="text-decoration:none;color:inherit">
+      <div class="blog-card-top"></div>
+      <div class="blog-card-body">
+        <div class="blog-card-date">May 26, 2026</div>
+        <div class="blog-card-title">Understanding IEC Cable Standards: IEC 60502 Explained</div>
+        <div class="blog-card-desc">A clear breakdown of IEC 60502 for low and medium voltage power cables — what the standard covers and why it matters for international procurement.</div>
+        <span class="blog-card-link">Read Article <span class="arrow">→</span></span>
+      </div>
+    </a>
+    <a href="blog/copper-vs-aluminium-conductors.html" class="blog-card" style="text-decoration:none;color:inherit">
+      <div class="blog-card-top"></div>
+      <div class="blog-card-body">
+        <div class="blog-card-date">May 24, 2026</div>
+        <div class="blog-card-title">Copper vs Aluminium Conductors: Cost, Performance & Selection Guide</div>
+        <div class="blog-card-desc">Compare conductivity, weight, cost, and durability to decide between copper and aluminium conductors for your cable order.</div>
+        <span class="blog-card-link">Read Article <span class="arrow">→</span></span>
+      </div>
+    </a>
+    <a href="blog/cable-quality-certifications-guide.html" class="blog-card" style="text-decoration:none;color:inherit">
+      <div class="blog-card-top"></div>
+      <div class="blog-card-body">
+        <div class="blog-card-date">May 22, 2026</div>
+        <div class="blog-card-title">Cable Quality Certifications: What Every Buyer Should Verify</div>
+        <div class="blog-card-desc">ISO 9001, IEC, CE, BS, GB/T — understand which certifications matter when evaluating cable manufacturers and suppliers.</div>
+        <span class="blog-card-link">Read Article <span class="arrow">→</span></span>
+      </div>
+    </a>
   </div>
 </section>
 
