@@ -4,4 +4,4 @@ Disallow: /prompts/
 Disallow: /copy/
 Disallow: /data/
 
-Sitemap: https://amperoncables.com/sitemap.xml
+Sitemap: https://willx1-xu.github.io/amperon-cables/sitemap.xml
