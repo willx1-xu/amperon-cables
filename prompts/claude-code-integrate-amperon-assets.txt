@@ -1,0 +1,83 @@
+你现在在项目目录：
+
+d:/cc安装/projects/cable-catalog/
+
+我已经把 Amperon Cables 网站素材包解压到当前项目目录。请你只做安全增量修改，不要重做整个项目。
+
+目标：
+把现有 index.htm 从普通电缆目录升级为 Amperon Cables 品牌官网首页。
+
+品牌信息：
+- Brand: Amperon Cables
+- Slogan: Power Cables That Power the World
+- Domain: amperoncables.com
+- Email: sales@amperoncables.com
+- Founded: 2012
+- Factory: 50,000 m², 25 production lines, annual output 50,000 tons
+- Export: 50+ countries
+- Positioning: China power cable factory direct supplier for overseas wholesalers and engineering contractors
+
+配色：
+- Background black: #0A0A0F
+- Dark cards: #12121A / #1C1C28
+- Gold: #C9A84C
+- Light gold: #E8C96A
+- White: #FFFFFF
+- Gray text: #8A8A9A
+- WhatsApp green: #25D366
+
+字体：
+- Headings: Montserrat, sans-serif
+- Body: Inter, sans-serif
+
+素材路径：
+- Logo: assets/brand/amperon-logo.svg
+- Favicon: assets/favicons/favicon.ico / assets/favicons/favicon.svg
+- Hero image: assets/images/hero-cable-factory.webp
+- Product images:
+  - assets/images/products/lv-power-cables.webp
+  - assets/images/products/mv-power-cables.webp
+  - assets/images/products/swa-armored-power-cables.webp
+  - assets/images/products/rubber-flexible-cables.webp
+  - assets/images/products/overhead-abc-cables.webp
+  - assets/images/products/control-cables.webp
+- Why Us image: assets/images/factory/why-us-factory-production-line.webp
+- Certification icons: assets/icons/certifications/*.svg
+- Brand data: data/brand.json
+- Product data: data/products.json
+- Copy files: copy/*.md
+
+页面结构要求：
+导航栏 → Hero首屏 → 数据条 → 6产品卡片 → Why Us → 认证展示 → 采购流程4步 → FAQ 6问 → 询价表单 → 页脚
+
+具体执行：
+1. 先读取 index.htm，确认当前 HTML/CSS/JS 结构。
+2. 保留原有可用结构，只替换品牌、图片、产品卡片、文案和配色。
+3. 顶部导航使用 Amperon logo，站点名 Amperon Cables。
+4. Hero 使用 assets/images/hero-cable-factory.webp，并叠加标题：
+   "Power Cables That Power the World"
+   副标题强调 China factory direct supplier for wholesalers and engineering contractors。
+5. 数据条展示：
+   2012 Founded / 50,000 m² Factory / 25 Production Lines / 50+ Export Countries / 50,000 Tons Annual Output。
+6. 产品区只展示 6 个产品，读取 data/products.json 或手动按 JSON 内容写入 HTML。
+7. Why Us 区使用 factory image，并写出 factory direct、custom specs、export packaging、technical support 等卖点。
+8. 认证区使用 7 个 SVG 图标：
+   ISO 9001, ISO 14001, OHSAS 18001, IEC 60502, BS 5467, CE, GB/T 12706。
+9. 采购流程4步：
+   Send Requirements → Confirm Specification → Production & Inspection → Export Delivery。
+10. FAQ 使用 copy/faq.md 内容。
+11. 询价表单字段至少包括：
+   Name, Email, WhatsApp, Product Type, Cable Specification, Quantity, Destination Port, Message。
+12. 页脚显示：
+   Amperon Cables, sales@amperoncables.com, amperoncables.com。
+13. 加入 favicon 引用。
+14. 优先使用 WebP 图片。如果用 picture 标签，JPG 做 fallback。
+15. 检查所有图片路径相对 index.htm 有效。
+16. 完成后告诉我修改了哪些文件，以及我应该如何本地打开验证。
+
+限制：
+- 不要联网下载依赖。
+- 不要引入大型框架。
+- 不要改项目目录外的文件。
+- 不要删除已有功能。
+- 如果需要加 CSS，只追加或小范围修改，不要全量重写。

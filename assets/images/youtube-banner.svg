@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0A0F"/><stop offset="1" stop-color="#1C1C28"/></linearGradient></defs>
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <circle cx="1940" cy="720" r="520" fill="#C9A84C" opacity=".10"/>
+  <text x="180" y="540" font-family="Montserrat, Arial, sans-serif" font-size="112" font-weight="900" fill="#FFFFFF">AMPERON CABLES</text>
+  <text x="182" y="650" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#C9A84C">Power Cables That Power the World</text>
+  <text x="184" y="760" font-family="Inter, Arial, sans-serif" font-size="40" fill="#8A8A9A">Factory Direct Supplier • LV/MV Power Cable • Armored Cable • ABC Cable • Control Cable</text>
+  <text x="184" y="860" font-family="Inter, Arial, sans-serif" font-size="40" fill="#FFFFFF">amperoncables.com</text>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "brandName": "Amperon Cables",
+  "positioning": "China power cable factory direct supplier for overseas wholesalers and engineering contractors",
+  "slogan": "Power Cables That Power the World",
+  "founded": 2012,
+  "factoryScale": "50,000 m²",
+  "productionLines": 25,
+  "annualOutput": "50,000 tons",
+  "exportCountries": "50+",
+  "domain": "amperoncables.com",
+  "email": "sales@amperoncables.com",
+  "colors": {
+    "backgroundBlack": "#0A0A0F",
+    "darkCard1": "#12121A",
+    "darkCard2": "#1C1C28",
+    "primaryGold": "#C9A84C",
+    "lightGold": "#E8C96A",
+    "white": "#FFFFFF",
+    "grayText": "#8A8A9A",
+    "whatsappGreen": "#25D366"
+  },
+  "fonts": {
+    "heading": "Montserrat 700/800/900",
+    "body": "Inter 400/600/700"
+  }
+}

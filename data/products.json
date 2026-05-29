@@ -1,0 +1,67 @@
+[
+  {
+    "id": "lv-power-cables",
+    "name": "LV Power Cables 0.6/1kV",
+    "tag": "Best Seller / Low Voltage",
+    "standard": "IEC 60502-1",
+    "conductor": "Copper or aluminium, 1.5–630mm²",
+    "insulation": "PVC or XLPE",
+    "application": "Building wiring, industrial distribution and underground installation",
+    "imageWebp": "assets/images/products/lv-power-cables.webp",
+    "imageJpg": "assets/images/products/lv-power-cables.jpg"
+  },
+  {
+    "id": "mv-power-cables",
+    "name": "MV Power Cables 6/35kV",
+    "tag": "Industrial Grade / Medium Voltage",
+    "standard": "IEC 60502-2",
+    "conductor": "Copper or aluminium, 25–630mm²",
+    "insulation": "XLPE with copper tape screen",
+    "application": "Transmission and distribution networks, substations and industrial plants",
+    "imageWebp": "assets/images/products/mv-power-cables.webp",
+    "imageJpg": "assets/images/products/mv-power-cables.jpg"
+  },
+  {
+    "id": "swa-armored-power-cables",
+    "name": "SWA Armored Power Cables",
+    "tag": "Heavy Duty / Armored",
+    "standard": "IEC 60502-1, BS 5467",
+    "armor": "SWA / STA / AWA",
+    "application": "Direct burial, outdoor laying, anti-rodent and mechanical damage protection",
+    "imageWebp": "assets/images/products/swa-armored-power-cables.webp",
+    "imageJpg": "assets/images/products/swa-armored-power-cables.jpg"
+  },
+  {
+    "id": "rubber-flexible-cables",
+    "name": "Rubber Flexible Cables",
+    "tag": "Flexible",
+    "standard": "IEC 60245",
+    "conductor": "1.5–185mm², Class 5/6 flexible conductor",
+    "sheath": "EPR / CR",
+    "application": "Mining, construction sites, welding equipment and temporary power supply",
+    "imageWebp": "assets/images/products/rubber-flexible-cables.webp",
+    "imageJpg": "assets/images/products/rubber-flexible-cables.jpg"
+  },
+  {
+    "id": "overhead-abc-cables",
+    "name": "Overhead ABC Cables",
+    "tag": "Overhead",
+    "standard": "IEC 60502",
+    "conductor": "Aluminium, 16–120mm²",
+    "insulation": "XLPE or HDPE, UV-resistant and weather-resistant",
+    "application": "Overhead distribution lines",
+    "imageWebp": "assets/images/products/overhead-abc-cables.webp",
+    "imageJpg": "assets/images/products/overhead-abc-cables.jpg"
+  },
+  {
+    "id": "control-cables",
+    "name": "Control Cables",
+    "tag": "Control",
+    "standard": "IEC 60227",
+    "cores": "2–61 cores",
+    "insulation": "PVC or XLPE, optional shielding",
+    "application": "Automation control, instrumentation signals and industrial signal transmission",
+    "imageWebp": "assets/images/products/control-cables.webp",
+    "imageJpg": "assets/images/products/control-cables.jpg"
+  }
+]
