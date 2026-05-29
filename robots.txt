@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /prompts/
+Disallow: /copy/
+Disallow: /data/
+
+Sitemap: https://amperoncables.com/sitemap.xml

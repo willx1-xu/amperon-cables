@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://amperoncables.com/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://amperoncables.com/assets/images/hero-cable-factory.webp</image:loc>
+      <image:title>Amperon Cables Factory — Power Cable Manufacturing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://amperoncables.com/assets/images/factory/why-us-factory-production-line.webp</image:loc>
+      <image:title>Amperon Cables Production Line — 50,000 m² Factory</image:title>
+    </image:image>
+  </url>
+</urlset>
