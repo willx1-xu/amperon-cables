@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="GB/T 12706 certification badge">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="GB/T 12706 Chinese National Cable Standard">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#E8C96A"/>
-      <stop offset="100%" stop-color="#C9A84C"/>
+      <stop offset="0%" stop-color="#1A365D"/>
+      <stop offset="100%" stop-color="#234B7A"/>
     </linearGradient>
   </defs>
-  <rect x="4" y="4" width="72" height="72" rx="18" fill="#12121A" stroke="url(#g)" stroke-width="3"/>
-  <path d="M40 14l7 14 15 2-11 11 3 15-14-8-14 8 3-15-11-11 15-2z" fill="url(#g)" opacity=".95"/>
-  <text x="40" y="63" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">GB/T 12706</text>
+  <rect x="2" y="2" width="76" height="76" rx="12" fill="url(#g)" stroke="#C9A84C" stroke-width="2.5"/>
+  <path d="M20 56V20a2 2 0 0 1 2-2h36a2 2 0 0 1 2 2v36a2 2 0 0 1-2 2H22a2 2 0 0 1-2-2z" fill="none" stroke="#C9A84C" stroke-width="2.8"/>
+  <path d="M22 38h36M22 44h36" fill="none" stroke="#C9A84C" stroke-width="1.8" opacity="0.4"/>
+  <text x="40" y="72" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="6.5" font-weight="700" fill="#E2E8F0" letter-spacing="0.2">GB/T 12706</text>
 </svg>

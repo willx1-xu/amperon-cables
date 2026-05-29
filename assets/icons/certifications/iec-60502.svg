@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="IEC 60502 certification badge">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" role="img" aria-label="IEC 60502 Power Cable Standard">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#E8C96A"/>
-      <stop offset="100%" stop-color="#C9A84C"/>
+      <stop offset="0%" stop-color="#1A365D"/>
+      <stop offset="100%" stop-color="#234B7A"/>
     </linearGradient>
   </defs>
-  <rect x="4" y="4" width="72" height="72" rx="18" fill="#12121A" stroke="url(#g)" stroke-width="3"/>
-  <path d="M40 14l7 14 15 2-11 11 3 15-14-8-14 8 3-15-11-11 15-2z" fill="url(#g)" opacity=".95"/>
-  <text x="40" y="63" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">IEC 60502</text>
+  <rect x="2" y="2" width="76" height="76" rx="12" fill="url(#g)" stroke="#C9A84C" stroke-width="2.5"/>
+  <path d="M20 18h28l12 14v24a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="none" stroke="#C9A84C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 18V28a4 4 0 0 0 4 4h8" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 48h20M30 38h14" fill="none" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/>
+  <text x="40" y="72" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="7" font-weight="700" fill="#E2E8F0" letter-spacing="0.3">IEC 60502</text>
 </svg>
