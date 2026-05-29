@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cable Voltage Drop Calculation Guide — How to Size Cables Correctly | Amperon Cables</title>
+  <link rel="canonical" href="https://willx1-xu.github.io/amperon-cables/blog/cable-voltage-drop-calculation-guide.html">
+  <meta name="description" content="Learn how to calculate voltage drop in power cables. Step-by-step guide with formulas, worked examples, and a quick reference table. Avoid undersized cables and energy losses." />
+  <meta name="keywords" content="cable voltage drop, voltage drop calculation, cable sizing, voltage drop formula, cable voltage drop table, power cable sizing, electrical voltage drop, mV/A/m" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Cable Voltage Drop Calculation Guide — How to Size Cables Correctly">
+  <meta property="og:description" content="Step-by-step voltage drop calculation guide with formulas, examples, and tables for power cable sizing.">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cable Voltage Drop Calculation Guide — How to Size Cables Correctly",
+    "datePublished": "2026-05-28",
+    "dateModified": "2026-05-28",
+    "author": { "@type": "Organization", "name": "Amperon Cables" },
+    "publisher": { "@type": "Organization", "name": "Amperon Cables" },
+    "description": "Learn how to calculate voltage drop in power cables. Step-by-step guide with formulas, worked examples, and a quick reference table."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://willx1-xu.github.io/amperon-cables/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://willx1-xu.github.io/amperon-cables/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "Cable Voltage Drop Calculation Guide", "item": "https://willx1-xu.github.io/amperon-cables/blog/cable-voltage-drop-calculation-guide.html" }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1A365D; --navy-dark: #0F2440; --navy-light: #234B7A;
+      --gold: #C9A84C; --gold-light: #E8C96A; --gold-pale: #FBF6E8;
+      --white: #FFFFFF; --gray-50: #F8FAFC; --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0; --gray-300: #CBD5E1; --gray-400: #94A3B8;
+      --gray-500: #64748B; --gray-600: #475569; --gray-700: #334155;
+      --gray-800: #1E293B; --gray-900: #0F172A; --whatsapp: #25D366;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #fff; color: var(--gray-800); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6%; height: 64px;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200); box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--navy); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: 1.5px; }
+    .logo-img { height: 32px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links > li > a { color: var(--gray-600); text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; transition: color 0.2s; padding: 4px 0; }
+    .nav-links > li > a:hover { color: var(--navy); }
+    .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; }
+    @media(max-width:768px){ .nav-links { display: none; } }
+    .article-hero { background: var(--navy); padding: 120px 6% 56px; color: #fff; }
+    .article-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .article-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
+    .article-hero .category-tag { display: inline-block; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 760px; }
+    .article-hero .article-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 16px; }
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 6% 40px; }
+    .article-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--gray-900); margin: 44px 0 16px; }
+    .article-body h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--gray-800); margin: 32px 0 12px; }
+    .article-body p { color: var(--gray-600); font-size: 1rem; line-height: 1.85; margin-bottom: 18px; }
+    .article-body ul, .article-body ol { color: var(--gray-600); font-size: 0.95rem; line-height: 1.85; padding-left: 22px; margin-bottom: 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 0.9rem; border: 1px solid var(--gray-200); border-radius: 8px; overflow: hidden; }
+    .article-body th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-size: 0.8rem; font-weight: 700; }
+    .article-body td { padding: 10px 16px; border-bottom: 1px solid var(--gray-100); color: var(--gray-700); }
+    .article-body tr:nth-child(even) td { background: var(--gray-50); }
+    .highlight-box { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .highlight-box p { margin: 0; color: var(--gray-700); font-size: 0.92rem; }
+    .cta-box { background: var(--navy); border-radius: 14px; padding: 40px; text-align: center; margin: 48px 0; color: #fff; }
+    .cta-box h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 12px; }
+    .cta-box p { color: rgba(255,255,255,0.65); margin-bottom: 24px; }
+    .btn-wa { background: var(--whatsapp); color: #fff; padding: 16px 36px; border-radius: 7px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(37,211,102,0.3); transition: all 0.25s; }
+    .btn-wa:hover { background: #20bd5a; transform: translateY(-2px); }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
+    @media(max-width:768px){ .related-grid { grid-template-columns: 1fr; } }
+    .related-card { border: 1px solid var(--gray-200); border-radius: 10px; padding: 22px; text-decoration: none; color: inherit; transition: all 0.25s; display: block; }
+    .related-card:hover { border-color: var(--navy); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .related-card h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--gray-900); margin-bottom: 6px; }
+    .related-card p { font-size: 0.82rem; color: var(--gray-500); margin: 0; }
+    footer { background: var(--gray-900); padding: 48px 6% 24px; color: #fff; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+    @media(max-width:768px){ .footer-top { grid-template-columns: 1fr 1fr; } }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline { color: var(--gray-400); font-size: 0.84rem; line-height: 1.7; max-width: 260px; margin-bottom: 14px; }
+    .footer-wa-link { display: inline-flex; align-items: center; gap: 6px; background: var(--whatsapp); color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.8rem; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px; }
+    .footer-links { display: flex; flex-direction: column; gap: 8px; list-style: none; padding: 0; }
+    .footer-links a { color: var(--gray-500); text-decoration: none; font-size: 0.84rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; color: var(--gray-500); font-size: 0.76rem; }
+    .wa-float { position: fixed; bottom: 28px; left: 28px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 6px 24px rgba(37,211,102,0.35); display: flex; align-items: center; justify-content: center; background: #25D366; text-decoration: none; transition: transform 0.3s; }
+    .wa-float:hover { transform: scale(1.1); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="/amperon-cables/" class="logo"><img src="../assets/brand/amperon-logo.svg" alt="Amperon Cables" class="logo-img"></a>
+  <ul class="nav-links">
+    <li><a href="/amperon-cables/#products">Products</a></li>
+    <li><a href="/amperon-cables/#why">Why Us</a></li>
+    <li><a href="/amperon-cables/#certs">Certifications</a></li>
+    <li><a href="/amperon-cables/#blog">Insights</a></li>
+    <li><a href="/amperon-cables/#quote" class="nav-cta">Get Quote</a></li>
+  </ul>
+</nav>
+
+<section class="article-hero">
+  <div class="breadcrumb"><a href="/amperon-cables/">Home</a> &rsaquo; <a href="/amperon-cables/#blog">Blog</a> &rsaquo; Cable Voltage Drop Calculation Guide</div>
+  <span class="category-tag">Technical Guide</span>
+  <h1>Cable Voltage Drop Calculation Guide: How to Size Cables Correctly</h1>
+  <div class="article-meta">May 28, 2026 &middot; Amperon Cables Engineering Team</div>
+</section>
+
+<article class="article-body">
+  <p>Undersizing a cable doesn't just mean wasted energy — it can cause motors to stall, breakers to trip, and equipment to fail prematurely. Voltage drop is one of the most overlooked yet critical factors in cable selection. This guide walks through the calculation, the relevant standards, and a practical method you can use on any project.</p>
+
+  <h2>What Is Voltage Drop and Why Does It Matter?</h2>
+  <p>When current flows through a cable conductor, the conductor's resistance causes a small voltage loss between the source and the load. This is voltage drop, expressed either in volts (V) or as a percentage of the supply voltage. Excessive voltage drop leads to: dim or flickering lights, motors running hot and drawing higher current, reduced equipment efficiency, and in extreme cases, equipment failing to start. Most international standards recommend a maximum voltage drop of 3% for lighting circuits and 5% for power circuits from the supply point to the load.</p>
+
+  <h2>The Voltage Drop Formula</h2>
+  <p>For single-phase AC circuits:</p>
+  <p><strong>V<sub>drop</sub> = (2 &times; L &times; I &times; (R<sub>c</sub> cos&phi; + X<sub>c</sub> sin&phi;)) / 1000</strong></p>
+  <p>For three-phase AC circuits (the more common case for power cables):</p>
+  <p><strong>V<sub>drop</sub> = (&radic;3 &times; L &times; I &times; (R<sub>c</sub> cos&phi; + X<sub>c</sub> sin&phi;)) / 1000</strong></p>
+  <p>Where: L = cable length in meters (one-way), I = load current in amperes, R<sub>c</sub> = conductor AC resistance in &Omega;/km, X<sub>c</sub> = conductor reactance in &Omega;/km, cos&phi; = load power factor.</p>
+
+  <div class="highlight-box">
+    <p><strong>Simplified approach:</strong> Most cable manufacturers publish mV/A/m (millivolt per amp per meter) values for standard cable sizes. The formula then becomes: <strong>V<sub>drop</sub> = (mV/A/m &times; I &times; L) / 1000</strong> (single-phase) or <strong>V<sub>drop</sub> = (&radic;3 &times; mV/A/m &times; I &times; L) / 1000</strong> (three-phase).</p>
+  </div>
+
+  <h2>Worked Example: 3-Phase Motor Feeder</h2>
+  <p>Scenario: A 55kW motor, 400V 3-phase, power factor 0.85, full load current ~98A. Cable run: 150m from MCC to motor. We're considering a 35mm&sup2; copper XLPE cable. From the manufacturer's data table, mV/A/m for 35mm&sup2; Cu at pf 0.85 = 1.10 mV/A/m.</p>
+  <p><strong>V<sub>drop</sub> = (&radic;3 &times; 1.10 &times; 98 &times; 150) / 1000 = 28.0V</strong></p>
+  <p><strong>% drop = (28.0 / 400) &times; 100 = 7.0%</strong></p>
+  <p>This exceeds the typical 5% maximum for motor circuits. Solution: increase to 50mm&sup2;. Recalculate with mV/A/m for 50mm&sup2; = 0.80 mV/A/m: V<sub>drop</sub> = (&radic;3 &times; 0.80 &times; 98 &times; 150) / 1000 = 20.4V, % drop = 5.1%. Close to the limit. Going to 70mm&sup2; gives a comfortable 3.6%.</p>
+
+  <h2>Quick Reference: Approximate mV/A/m Values (Copper, XLPE, 3-Phase, pf 0.85)</h2>
+  <table>
+    <tr><th>Cable Size (mm&sup2;)</th><th>mV/A/m</th><th>Cable Size (mm&sup2;)</th><th>mV/A/m</th></tr>
+    <tr><td>2.5</td><td>15.0</td><td>70</td><td>0.55</td></tr>
+    <tr><td>4</td><td>9.5</td><td>95</td><td>0.41</td></tr>
+    <tr><td>6</td><td>6.4</td><td>120</td><td>0.33</td></tr>
+    <tr><td>10</td><td>3.8</td><td>150</td><td>0.27</td></tr>
+    <tr><td>16</td><td>2.4</td><td>185</td><td>0.22</td></tr>
+    <tr><td>25</td><td>1.55</td><td>240</td><td>0.175</td></tr>
+    <tr><td>35</td><td>1.10</td><td>300</td><td>0.140</td></tr>
+    <tr><td>50</td><td>0.80</td><td>400</td><td>0.115</td></tr>
+  </table>
+  <p style="font-size:0.82rem;color:var(--gray-400)">Note: Values are approximate for XLPE insulated copper cables at 90&deg;C operating temperature. For PVC cables, multiply by approximately 1.05. For aluminium, multiply by approximately 1.6. Always confirm with the manufacturer's datasheet for your specific cable construction.</p>
+
+  <h2>Factors That Affect Voltage Drop</h2>
+  <h3>1. Conductor Material</h3>
+  <p>Aluminium has approximately 1.6 times the resistance of copper for the same cross-section. An aluminium cable needs to be roughly one or two sizes larger to achieve the same voltage drop as copper. This is a key trade-off: aluminium is cheaper per kg but may require a larger (and more expensive) cable size.</p>
+  <h3>2. Operating Temperature</h3>
+  <p>Conductor resistance increases with temperature. Cable ratings assume operation at maximum conductor temperature (70&deg;C for PVC, 90&deg;C for XLPE). If your cable operates well below its rating, the actual voltage drop will be lower than calculated — a conservative bonus.</p>
+  <h3>3. Cable Length</h3>
+  <p>Voltage drop is directly proportional to cable length. Doubling the distance doubles the drop. For long cable runs (warehouses, outdoor lighting, pump stations, solar farms), voltage drop often dictates the cable size, not ampacity.</p>
+  <h3>4. Power Factor</h3>
+  <p>For cables larger than 16mm&sup2;, inductive reactance becomes significant. A poor power factor (below 0.8) increases voltage drop noticeably. Motor loads with pf 0.85 are typical; lighting and heating loads at pf ~1.0 have lower voltage drop.</p>
+
+  <h2>Standards to Reference</h2>
+  <ul>
+    <li><strong>IEC 60364-5-52</strong> — Low-voltage electrical installations, selection and erection of wiring systems. Recommends max 3% for lighting, 5% for other uses.</li>
+    <li><strong>BS 7671 (UK Wiring Regulations)</strong> — Appendix 4 contains standard voltage drop tables (mV/A/m) for common British cable types.</li>
+    <li><strong>NEC (USA)</strong> — Recommends max 5% total (feeder + branch), with max 3% per section.</li>
+  </ul>
+
+  <h2>When to Ask Your Cable Supplier for Help</h2>
+  <p>For complex projects — long cable runs, multiple parallel cables, mixed loads, or harmonic-rich environments — the voltage drop calculation becomes more involved. A good cable manufacturer can provide precise R and X values for your specific cable construction and help verify your sizing. At Amperon, we include mV/A/m data in our quotation package so you can verify sizing before ordering.</p>
+
+  <div class="cta-box">
+    <h3>Need Help Sizing Your Cables?</h3>
+    <p>Send us your load details and cable run length — our engineering team will verify the sizing and recommend the most cost-effective cable option.</p>
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I%20need%20help%20with%20cable%20voltage%20drop%20calculations%20for%20my%20project.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Engineering Support
+    </a>
+  </div>
+
+  <h2>Related Articles</h2>
+  <div class="related-grid">
+    <a href="copper-vs-aluminium-conductors.html" class="related-card"><h4>Copper vs Aluminium Conductors &rarr;</h4><p>How conductor material choice affects voltage drop and cable sizing.</p></a>
+    <a href="buyer-guide-how-to-choose-power-cable.html" class="related-card"><h4>Power Cable Buyer's Guide &rarr;</h4><p>Complete guide to selecting the right cable for your project.</p></a>
+    <a href="iec-cable-standards-explained.html" class="related-card"><h4>IEC Cable Standards Explained &rarr;</h4><p>Understanding IEC 60502 and what it specifies for LV/MV cables.</p></a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">AMPER<span>ON</span> CABLES</div>
+      <p class="footer-tagline">Factory-direct B2B power cable manufacturer.</p>
+      <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20to%20inquire%20about%20your%20cables.&type=phone_number&app_absent=0" class="footer-wa-link" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Blog</div>
+      <ul class="footer-links">
+        <li><a href="buyer-guide-how-to-choose-power-cable.html">Buyer's Guide</a></li>
+        <li><a href="armoured-vs-unarmoured-cable-guide.html">Armoured vs Unarmoured</a></li>
+        <li><a href="iec-cable-standards-explained.html">IEC Standards</a></li>
+        <li><a href="copper-vs-aluminium-conductors.html">Copper vs Aluminium</a></li>
+        <li><a href="cable-quality-certifications-guide.html">Certifications Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="/amperon-cables/">Home</a></li>
+        <li><a href="/amperon-cables/#products">Products</a></li>
+        <li><a href="/amperon-cables/#why">Why Us</a></li>
+        <li><a href="/amperon-cables/#certs">Certifications</a></li>
+        <li><a href="/amperon-cables/#quote">Get Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:xuke@link-jl.com">xuke@link-jl.com</a></li>
+        <li><a href="tel:+8613201571341">+86 132 0157 1341</a></li>
+        <li>Export Department, China</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Amperon Cables. All rights reserved.</div>
+</footer>
+
+<a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+</a>
+
+</body>
+</html>

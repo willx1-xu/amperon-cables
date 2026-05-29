@@ -15,6 +15,116 @@
       <image:title>Amperon Cables Production Line — 50,000 m² Factory</image:title>
     </image:image>
   </url>
+
+  <!-- PRODUCT PAGES -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/lv-power-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/mv-power-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/swa-armored-power-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/rubber-flexible-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/overhead-abc-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/control-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- APPLICATION PAGES -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/mining-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/construction-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/power-distribution-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/oil-gas-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/industrial-manufacturing-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/applications/renewable-energy-cables.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CORE PAGES -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/about.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/certifications.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/case-studies.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/pricing-guide.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/support.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BLOG ARTICLES -->
   <url>
     <loc>https://willx1-xu.github.io/amperon-cables/blog/buyer-guide-how-to-choose-power-cable.html</loc>
     <lastmod>2026-05-29</lastmod>
@@ -42,6 +152,36 @@
   <url>
     <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-quality-certifications-guide.html</loc>
     <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-voltage-drop-calculation-guide.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/lszh-vs-pvc-cable-sheath.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-moq-minimum-order-quantity-guide.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/how-to-import-power-cables-from-china.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/xlpe-vs-pvc-cable-insulation-comparison.html</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -573,7 +573,7 @@
 
     /* ===== FOOTER ===== */
     footer { background: var(--gray-900); padding: 60px 6% 32px; color: #fff; }
-    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px; margin-bottom: 48px; }
+    .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr 1.3fr; gap: 48px; margin-bottom: 48px; }
     .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.3rem; letter-spacing: 2px; margin-bottom: 14px; color: #fff; }
     .footer-logo span { color: var(--gold); }
     .footer-tagline { color: var(--gray-400); font-size: 0.87rem; line-height: 1.7; max-width: 260px; margin-bottom: 16px; }
@@ -614,7 +614,7 @@
     /* ===== RESPONSIVE ===== */
     @media(max-width:960px) {
       .why-grid { grid-template-columns: 1fr; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr 1fr; }
     }
     @media(max-width:768px) {
       nav { height: 60px; }
@@ -624,7 +624,7 @@
       .nav-dropdown .dropdown-menu { display: block; position: static; transform: none; border: none; background: none; box-shadow: none; padding: 0 0 0 16px; border-left: 2px solid var(--gray-200); margin-top: 8px; }
       .form-grid { grid-template-columns: 1fr; }
       .form-full { grid-column: auto; }
-      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
       .wa-float { bottom: 20px; left: 12px; width: 54px; height: 54px; }
       .wa-tooltip { display: none; }
       .certs-grid { grid-template-columns: repeat(4, 1fr); }
@@ -654,17 +654,26 @@
     <li class="nav-dropdown">
       <a href="#products">Products</a>
       <ul class="dropdown-menu">
-        <li><a href="#product-lv">LV Power Cables</a></li>
-        <li><a href="#product-mv">MV Power Cables</a></li>
-        <li><a href="#product-armored">Armored/SWA Cables</a></li>
-        <li><a href="#product-rubber">Rubber Flexible Cables</a></li>
-        <li><a href="#product-abc">Overhead ABC Cables</a></li>
-        <li><a href="#product-control">Control Cables</a></li>
+        <li><a href="products/lv-power-cables.html">LV Power Cables</a></li>
+        <li><a href="products/mv-power-cables.html">MV Power Cables</a></li>
+        <li><a href="products/swa-armored-power-cables.html">Armored/SWA Cables</a></li>
+        <li><a href="products/rubber-flexible-cables.html">Rubber Flexible Cables</a></li>
+        <li><a href="products/overhead-abc-cables.html">Overhead ABC Cables</a></li>
+        <li><a href="products/control-cables.html">Control Cables</a></li>
       </ul>
     </li>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#certs">Certifications</a></li>
     <li><a href="#process">Process</a></li>
+    <li class="nav-dropdown">
+      <a href="#resources">Resources</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="pricing-guide.html">Pricing & MOQ</a></li>
+        <li><a href="support.html">Support & FAQ</a></li>
+      </ul>
+    </li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#blog">Insights</a></li>
     <li><a href="#quote" class="nav-cta">Get Quote</a></li>
@@ -743,6 +752,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
         </a>
+        <a href="products/lv-power-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
       </div>
     </div>
 
@@ -769,6 +779,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
         </a>
+        <a href="products/mv-power-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
       </div>
     </div>
 
@@ -795,6 +806,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
         </a>
+        <a href="products/swa-armored-power-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
       </div>
     </div>
 
@@ -816,6 +828,7 @@
           <span class="spec-tag">EPR / CR</span>
           <span class="spec-tag">Class 5/6</span>
         </div>
+        <a href="products/rubber-flexible-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
         <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I'm%20interested%20in%20Rubber%20Flexible%20Cables.%20Please%20send%20me%20a%20quote." class="product-wa-btn" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
@@ -845,6 +858,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
         </a>
+        <a href="products/overhead-abc-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
       </div>
     </div>
 
@@ -870,6 +884,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Inquire on WhatsApp
         </a>
+        <a href="products/control-cables.html" style="display:block;text-align:center;margin-top:8px;color:var(--navy);font-weight:700;font-size:0.8rem;text-decoration:none;">View Full Specs &rarr;</a>
       </div>
     </div>
 
@@ -1186,22 +1201,34 @@
     <div>
       <div class="footer-col-title">Products</div>
       <ul class="footer-links">
-        <li><a href="#product-lv">LV Power Cables</a></li>
-        <li><a href="#product-mv">MV Power Cables</a></li>
-        <li><a href="#product-armored">Armored SWA Cables</a></li>
-        <li><a href="#product-rubber">Rubber Flexible Cables</a></li>
-        <li><a href="#product-abc">Overhead ABC Cables</a></li>
-        <li><a href="#product-control">Control Cables</a></li>
+        <li><a href="products/lv-power-cables.html">LV Power Cables</a></li>
+        <li><a href="products/mv-power-cables.html">MV Power Cables</a></li>
+        <li><a href="products/swa-armored-power-cables.html">Armored SWA Cables</a></li>
+        <li><a href="products/rubber-flexible-cables.html">Rubber Flexible Cables</a></li>
+        <li><a href="products/overhead-abc-cables.html">Overhead ABC Cables</a></li>
+        <li><a href="products/control-cables.html">Control Cables</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Quick Links</div>
       <ul class="footer-links">
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#certs">Certifications</a></li>
-        <li><a href="#process">How It Works</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="pricing-guide.html">Pricing & MOQ</a></li>
+        <li><a href="support.html">Support & FAQ</a></li>
         <li><a href="#quote">Get Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Applications</div>
+      <ul class="footer-links">
+        <li><a href="applications/mining-cables.html">Mining Cables</a></li>
+        <li><a href="applications/construction-cables.html">Construction Cables</a></li>
+        <li><a href="applications/power-distribution-cables.html">Power Distribution</a></li>
+        <li><a href="applications/oil-gas-cables.html">Oil &amp; Gas Cables</a></li>
+        <li><a href="applications/industrial-manufacturing-cables.html">Industrial Manufacturing</a></li>
+        <li><a href="applications/renewable-energy-cables.html">Renewable Energy</a></li>
       </ul>
     </div>
     <div>
