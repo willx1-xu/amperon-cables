@@ -35,6 +35,39 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What voltage levels do MV power cables cover?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Our MV power cables cover rated voltages from 3.6/6kV up to 18/30kV (Um=36kV), commonly expressed as 6kV, 10kV, 15kV, 20kV, 30kV, and 35kV classes. The most frequently ordered voltage grades are 6/10kV and 8.7/15kV for industrial and utility distribution networks." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the purpose of the copper tape screen in MV cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The copper tape screen serves two critical functions: (1) it creates a uniform electric field around each core, preventing electrical stress concentration that could lead to partial discharge and insulation failure; (2) it provides a low-impedance earth fault current path. The screen cross-section is calculated based on the system's earth fault level." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you manufacture MV cables with aluminium conductors?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Aluminium conductor MV cables are available for 25mm² and above. Aluminium is lighter and more economical than copper for larger cross-sections, especially for overhead-to-underground transition poles and long distribution feeder runs. Both copper and aluminium options can be quoted." }
+      },
+      {
+        "@type": "Question",
+        "name": "What type tests do you perform on MV cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We perform partial discharge testing (≤10pC at 1.73Uo), AC high-voltage withstand, conductor resistance measurement, insulation resistance, tan delta measurement, hot-set test for XLPE, and sheath integrity testing. Type test certificates can be included in export documentation packages." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum bending radius for MV cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For single-core MV cables the minimum bending radius is 15× the cable outer diameter (15D) during installation and 10D in service. For three-core MV cables, 12D during installation and 8D in service. Always follow the drum label instructions — exceeding the minimum bending radius can damage the insulation." }
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -62,7 +95,7 @@
     .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; }
     .nav-cta:hover { background: var(--navy-light); }
     @media(max-width:768px){ .nav-links { display: none; } }
-    .page-hero { background: var(--navy); padding: 120px 6% 64px; color: #fff; }
+    .page-hero { background: linear-gradient(105deg, rgba(10,10,15,0.94) 32%, rgba(10,10,15,0.48) 100%), url('../assets/images/products/mv-power-cables.webp') center/cover no-repeat; padding: 120px 6% 64px; color: #fff; position: relative; }
     .page-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
     .page-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
     .page-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
@@ -289,6 +322,12 @@
     <div class="pill">XLPE Insulation</div>
     <div class="pill">Cu Tape Screen</div>
   </div>
+  <div class="hero-btns" style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I'd%20like%20a%20quote%20for%20MV%20Power%20Cables%206/35kV.&type=phone_number&app_absent=0" class="btn-primary" target="_blank" rel="noopener" style="background:var(--gold);color:var(--navy-dark);padding:16px 36px;font-weight:700;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;font-size:1rem;transition:all 0.2s;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Quote via WhatsApp
+    </a>
+  </div>
 </section>
 
 <section>
@@ -313,6 +352,46 @@
       <tr><td>Partial Discharge</td><td>&lt;10 pC at 1.73 U<sub>o</sub> (tested on every drum)</td></tr>
       <tr><td>Bending Radius</td><td>Unarmoured: 15D | Armoured: 12D</td></tr>
       <tr><td>Packaging</td><td>Wooden drums with inner end protection</td></tr>
+    </table>
+
+    <h2 style="margin-top:48px">Cable Structure</h2>
+    <div class="structure-diagram" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:28px 32px;margin-top:16px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">1</div>
+          <div><strong style="color:var(--navy);">Conductor</strong> — Stranded copper or aluminium, Class 2, compacted round. 25–630mm². Annealed plain or tinned copper; aluminium conductors are compacted to reduce diameter.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">2</div>
+          <div><strong style="color:var(--navy);">Conductor Screen</strong> — Extruded semi-conducting compound applied directly over the conductor. Creates a smooth interface that prevents electrical stress concentrations at the conductor surface.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">3</div>
+          <div><strong style="color:var(--navy);">XLPE Insulation</strong> — Cross-linked polyethylene, triple-layer co-extruded (conductor screen + XLPE + insulation screen) in a single pass on CCV (catenary continuous vulcanization) line. Dry-cured for low moisture content and excellent dielectric strength.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">4</div>
+          <div><strong style="color:var(--navy);">Insulation Screen</strong> — Extruded semi-conducting layer over the XLPE. Peelable or strippable for easy jointing and termination on site. Ensures uniform electric field at the insulation surface.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--gold);color:var(--navy-dark);min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">5</div>
+          <div><strong style="color:var(--navy);">Metallic Screen</strong> — Copper tape (≥0.1mm thickness) applied helically with overlap. Carries earth fault current and provides a defined earth path. Copper wire screen option available for single-core cables requiring higher fault current rating.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">6</div>
+          <div><strong style="color:var(--navy);">Outer Sheath</strong> — PVC (flame retardant), PE, or LSZH. For three-core cables: inner sheath (bedding) extruded over the laid-up cores, armour (if specified), then outer sheath. Embossed with meter marks and cable identification.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Applicable Standards</h2>
+    <table class="specs-table">
+      <tr><th>Standard</th><th>Scope</th></tr>
+      <tr><td>IEC 60502-2</td><td>Power cables with extruded insulation for rated voltages 6kV to 30kV</td></tr>
+      <tr><td>IEC 60228</td><td>Conductors of insulated cables — resistance and material requirements</td></tr>
+      <tr><td>BS 6622</td><td>British Standard for XLPE insulated armoured cables 3.8/6.6kV to 19/33kV</td></tr>
+      <tr><td>GB/T 12706.2</td><td>Chinese national standard for MV power cables (equivalent to IEC 60502-2)</td></tr>
+      <tr><td>IEC 60840</td><td>Power cables with extruded insulation for rated voltages above 30kV (when applicable)</td></tr>
     </table>
 
     <h2 style="margin-top:48px">Common Applications</h2>
@@ -341,6 +420,30 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
         Inquire on WhatsApp
       </a>
+    </div>
+
+    <h2 style="margin-top:48px">Frequently Asked Questions</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What voltage levels do MV cables cover?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Our MV cables cover 3.6/6kV through 18/30kV (Um=36kV). The most common orders are 6/10kV and 8.7/15kV for industrial and utility distribution. We can quote any voltage grade within this range.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What is the copper tape screen for?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">The copper tape screen creates a uniform electric field around each core, preventing partial discharge. It also provides a low-impedance earth fault current path. Screen cross-section is designed per the system's earth fault level and protection requirements.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Can you do aluminium conductor MV cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Yes. Aluminium MV cables are available for 25mm² and above. They are lighter and more economical for long distribution feeder runs. Both copper and aluminium can be quoted — we'll provide a cost comparison on request.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What testing is done on every MV cable drum?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">100% of drums undergo partial discharge testing (≤10pC at 1.73Uo), AC high-voltage withstand (2.5Uo for 5 minutes), conductor resistance measurement, and sheath integrity testing. Test reports are included with every shipment.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What is the minimum bending radius for MV cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Single-core MV cables: 15× outer diameter during installation, 10D in service. Three-core MV cables: 12D during installation, 8D in service. Exceeding the bending radius can damage the XLPE insulation and reduce cable service life.</p>
+      </details>
     </div>
 
     <h2 style="margin-top:48px">Related Products</h2>

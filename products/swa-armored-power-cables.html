@@ -35,6 +35,44 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between SWA, STA and AWA armoured cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SWA (Steel Wire Armour) uses galvanized steel wires wound helically — the strongest option, ideal for direct burial and outdoor areas with high mechanical risk. STA (Steel Tape Armour) uses overlapping steel tapes — lighter, suitable for underground duct installation. AWA (Aluminium Wire Armour) uses aluminium wires — non-magnetic, required for single-core AC circuits to avoid eddy current heating in the armour." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can SWA cables be used for underground direct burial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. SWA cables are specifically designed for direct burial without additional conduit. The steel wire armour provides mechanical protection against ground movement, sharp stones, and rodent attack. For direct burial, a PVC or PE outer sheath is standard. Always follow local burial depth regulations (typically 450-600mm below ground)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need AWA instead of SWA for single-core cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. For single-core AC circuits, AWA (aluminium wire armour) must be used because steel armour creates magnetic losses and eddy current heating. SWA is suitable for multi-core cables (2-core, 3-core, 4-core) where the phase currents cancel each other's magnetic fields. Using SWA on single-core AC can cause dangerous armour overheating." }
+      },
+      {
+        "@type": "Question",
+        "name": "What voltage ratings are available for armoured cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Armoured cables are available for both LV (0.6/1kV) and MV (6/10kV, 8.7/15kV, 12/20kV, 18/30kV). LV armoured cables to BS 5467 or IEC 60502-1 are our highest-volume product. MV armoured cables require triple-layer co-extruded XLPE insulation with copper tape screen under the armour." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I gland and terminate SWA cables correctly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SWA cables require proper SWA glands (brass or nickel-plated) sized to the cable's armour diameter. The gland clamps onto the steel wires, providing mechanical retention and earth continuity. Indoor (BW) and outdoor (CW) gland types are available. We can recommend gland sizes and suppliers with every cable order." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the typical lead time for armoured cable orders?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Standard SWA LV cable orders typically ship within 15-30 days, depending on specification and quantity. Custom constructions, MV armoured cables, or large-volume orders may require longer. Rush orders are evaluated based on line availability. Contact us with your spec for a firm delivery date." }
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -62,7 +100,7 @@
     .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; }
     .nav-cta:hover { background: var(--navy-light); }
     @media(max-width:768px){ .nav-links { display: none; } }
-    .page-hero { background: var(--navy); padding: 120px 6% 64px; color: #fff; }
+    .page-hero { background: linear-gradient(105deg, rgba(10,10,15,0.94) 32%, rgba(10,10,15,0.48) 100%), url('../assets/images/products/swa-armored-power-cables.webp') center/cover no-repeat; padding: 120px 6% 64px; color: #fff; position: relative; }
     .page-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
     .page-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
     .page-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
@@ -289,6 +327,12 @@
     <div class="pill">LV 0.6/1kV to MV 35kV</div>
     <div class="pill">Cu / Al</div>
   </div>
+  <div class="hero-btns" style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I'd%20like%20a%20quote%20for%20SWA%20Armored%20Power%20Cables.&type=phone_number&app_absent=0" class="btn-primary" target="_blank" rel="noopener" style="background:var(--gold);color:var(--navy-dark);padding:16px 36px;font-weight:700;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;font-size:1rem;transition:all 0.2s;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Quote via WhatsApp
+    </a>
+  </div>
 </section>
 
 <section>
@@ -320,6 +364,42 @@
       <tr><td>Packaging</td><td>Heavy-duty wooden drums with lagging protection</td></tr>
     </table>
 
+    <h2 style="margin-top:48px">Cable Structure — SWA</h2>
+    <div class="structure-diagram" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:28px 32px;margin-top:16px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">1</div>
+          <div><strong style="color:var(--navy);">Conductor</strong> — Stranded copper or aluminium, Class 2. Plain or tinned copper; compacted aluminium for smaller overall diameter.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">2</div>
+          <div><strong style="color:var(--navy);">Insulation</strong> — PVC (70°C) or XLPE (90°C), colour-coded per IEC 60445. For MV armoured cables: XLPE with triple-layer co-extrusion (conductor screen + XLPE + insulation screen).</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">3</div>
+          <div><strong style="color:var(--navy);">Inner Sheath (Bedding)</strong> — Extruded PVC or PE layer over the laid-up and filled cores. Provides a smooth cylindrical base for armour application and protects cores from contact with armour wires.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--gold);color:var(--navy-dark);min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">4</div>
+          <div><strong style="color:var(--navy);">Armour</strong> — Galvanized steel wires (SWA) helically wound over the bedding. Wire diameter and count selected by cable OD for full coverage. For STA: two overlapping steel tapes. For AWA: aluminium wires.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">5</div>
+          <div><strong style="color:var(--navy);">Outer Sheath</strong> — PVC (standard black), PE, or LSZH compound. UV-stabilized for outdoor installations. Embossed with "SWA", voltage class, core count, cross-section, and meter marks.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Applicable Standards</h2>
+    <table class="specs-table">
+      <tr><th>Standard</th><th>Scope</th></tr>
+      <tr><td>IEC 60502-1</td><td>Power cables with extruded insulation 1kV to 30kV — LV armoured</td></tr>
+      <tr><td>IEC 60502-2</td><td>Power cables with extruded insulation 6kV to 30kV — MV armoured</td></tr>
+      <tr><td>BS 5467</td><td>Thermosetting insulated armoured cables 600/1000V — LV SWA</td></tr>
+      <tr><td>BS 6622</td><td>Thermosetting insulated armoured cables 3.8/6.6kV to 19/33kV — MV SWA</td></tr>
+      <tr><td>GB/T 12706</td><td>Chinese national standard for armoured power cables (LV & MV)</td></tr>
+    </table>
+
     <h2 style="margin-top:48px">Common Applications</h2>
     <ul>
       <li><strong>Direct burial underground</strong> — no duct required, reduces installation cost</li>
@@ -337,6 +417,34 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
         Inquire on WhatsApp
       </a>
+    </div>
+
+    <h2 style="margin-top:48px">Frequently Asked Questions</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What is the difference between SWA, STA and AWA?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">SWA (Steel Wire Armour) uses galvanized steel wires — strongest, ideal for direct burial. STA (Steel Tape Armour) uses overlapping steel tapes — lighter, for underground duct. AWA (Aluminium Wire Armour) uses aluminium wires — non-magnetic, required for single-core AC circuits to prevent eddy current heating.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Can SWA cables be direct-buried underground?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Yes — SWA cables are designed for direct burial without conduit. The steel wire armour protects against ground movement, sharp stones, and rodents. Use PVC or PE outer sheath. Follow local burial depth regulations (typically 450–600mm).</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Do I need AWA for single-core AC circuits?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Yes. Single-core AC circuits must use AWA (aluminium wire armour). SWA (steel armour) on single-core AC creates magnetic flux and eddy currents that heat the armour to dangerous levels. Multi-core cables (2/3/4-core) can safely use SWA because phase currents cancel each other's magnetic fields.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What voltage ratings are available for armoured cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">LV: 0.6/1kV to BS 5467 and IEC 60502-1. MV: 6/10kV, 8.7/15kV, 12/20kV, 18/30kV to IEC 60502-2 and BS 6622. LV SWA is our highest-volume armoured product.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">How do I select the right gland for SWA cable?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Glands must match the cable's armour diameter — not the overall diameter. Use brass or nickel-plated SWA glands (BW for indoor, CW for outdoor). The gland clamps onto armour wires for mechanical retention and earth continuity. We can recommend gland sizes with your cable order.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Is there a minimum order quantity for armoured cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Standard SWA orders start from 500 meters per size. We are flexible on MOQ for trial orders, project samples, and first-time buyers. Contact us with your specification — we'll work with you on quantities.</p>
+      </details>
     </div>
 
     <h2 style="margin-top:48px">Related Products</h2>

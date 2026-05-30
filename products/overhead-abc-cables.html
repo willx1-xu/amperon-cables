@@ -40,6 +40,39 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are aerial bundled cables (ABC) used for?",
+        "acceptedAnswer": { "@type": "Answer", "text": "ABC cables are used for overhead low-voltage power distribution, replacing bare conductor open-wire systems. They bundle insulated phase conductors and a neutral/messenger wire into a single self-supporting assembly, mounted on poles. ABC eliminates conductor clashing in wind, reduces electrocution risk, prevents unauthorized tapping, and requires narrower right-of-way than bare conductors." }
+      },
+      {
+        "@type": "Question",
+        "name": "What core configurations are available for overhead ABC cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common configurations are 2-core (phase + neutral), 3-core (3 phases), 4-core (3 phases + neutral), and 4-core plus messenger (3 phases + neutral + separate messenger/support wire). The messenger wire can be bare aluminium alloy, ACSR, or insulated and integrated into the bundle. Configurations are specified based on the local distribution system (single-phase or three-phase)." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between XLPE and HDPE insulation for ABC cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "XLPE (cross-linked polyethylene) offers higher temperature rating (90°C) and better thermal stability — recommended for higher current loading and hot climates. HDPE (high-density polyethylene) is lower cost, with good UV resistance and mechanical strength — suitable for standard LV distribution in moderate climates. Both are UV-stabilized for 25+ year outdoor service life." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum span length for ABC overhead cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typical span lengths range from 30 to 60 meters between poles, depending on the messenger wire size, total cable weight, local wind and ice loading conditions, and the pole spacing standard used by the local utility. Longer spans up to 80 meters are possible with larger messenger cross-sections. We can provide sag-tension calculations for your specific installation." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are ABC cables safer than bare overhead conductors?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — ABC cables are significantly safer than bare conductors. Each phase conductor has its own UV-stabilized insulation, which eliminates phase-to-phase short circuits from wind-induced conductor clashing, reduces the risk of electrocution from accidental contact (e.g., falling branches, ladders), and deters electricity theft through unauthorized direct tapping. They also allow narrower pole spacing and tree clearance." }
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -69,7 +102,7 @@
     @media(max-width:768px) {
       .nav-links { display: none; }
     }
-    .page-hero { background: var(--navy); padding: 120px 6% 64px; color: #fff; }
+    .page-hero { background: linear-gradient(105deg, rgba(10,10,15,0.94) 32%, rgba(10,10,15,0.48) 100%), url('../assets/images/products/overhead-abc-cables.webp') center/cover no-repeat; padding: 120px 6% 64px; color: #fff; position: relative; }
     .page-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
     .page-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
     .page-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
@@ -298,6 +331,12 @@
     <div class="pill">XLPE / HDPE Insulation</div>
     <div class="pill">UV &amp; Weather Resistant</div>
   </div>
+  <div class="hero-btns" style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I'd%20like%20a%20quote%20for%20Overhead%20ABC%20Cables.&type=phone_number&app_absent=0" class="btn-primary" target="_blank" rel="noopener" style="background:var(--gold);color:var(--navy-dark);padding:16px 36px;font-weight:700;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;font-size:1rem;transition:all 0.2s;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Quote via WhatsApp
+    </a>
+  </div>
 </section>
 
 <section>
@@ -320,6 +359,42 @@
       <tr><td>Messenger Wire</td><td>Optional: bare AAC/AAAC or insulated Al alloy for self-supporting spans</td></tr>
       <tr><td>Maximum Span Length</td><td>40-60m (unsupported); 80-120m (with messenger wire, per design)</td></tr>
       <tr><td>Packaging</td><td>Wooden drums; length markings every metre on sheath</td></tr>
+    </table>
+
+    <h2 style="margin-top:48px">Cable Structure</h2>
+    <div class="structure-diagram" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:28px 32px;margin-top:16px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">1</div>
+          <div><strong style="color:var(--navy);">Phase Conductors</strong> — Aluminium, Class 2 stranded and compacted. 16–120mm². 2, 3, or 4 insulated phase cores. Bare aluminium or aluminium alloy messenger/neutral wire (optional, integrated or separate).</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">2</div>
+          <div><strong style="color:var(--navy);">Conductor Screen (optional)</strong> — Semi-conducting layer for MV ABC (above 1kV). Ensures uniform electric field distribution at the conductor-insulation interface.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">3</div>
+          <div><strong style="color:var(--navy);">Insulation</strong> — XLPE (90°C rated, cross-linked) or HDPE (75°C, thermoplastic). UV-stabilized with carbon black (≥2.5%) for 25+ year outdoor service. Each phase core has a distinct colour or surface marking for identification.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--gold);color:var(--navy-dark);min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">4</div>
+          <div><strong style="color:var(--navy);">Messenger/Neutral Wire</strong> — Bare or insulated aluminium alloy, ACSR (aluminium conductor steel reinforced), or stranded aluminium. Carries the mechanical tension when the cable is suspended between poles. Can be integrated (insulated, twisted with phase cores) or separate (bare, bundled outside).</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">5</div>
+          <div><strong style="color:var(--navy);">Core Assembly</strong> — Insulated phase cores twisted around the messenger wire in a helical lay (for integrated-messenger design) or cores twisted together without messenger (for separate-messenger design). The lay length is engineered for balanced tension and sag performance.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Applicable Standards</h2>
+    <table class="specs-table">
+      <tr><th>Standard</th><th>Scope</th></tr>
+      <tr><td>IEC 60502-1</td><td>Power cables with extruded insulation 1kV to 30kV — LV aerial cables</td></tr>
+      <tr><td>IEC 60228</td><td>Conductors of insulated cables — aluminium conductor requirements</td></tr>
+      <tr><td>BS 7870</td><td>British Standard for LV and MV polymeric insulated aerial bundled conductors</td></tr>
+      <tr><td>AS/NZS 3560</td><td>Australian/New Zealand standard for aerial bundled cables</td></tr>
+      <tr><td>NF C 33-209</td><td>French standard for LV overhead insulated bundled conductors</td></tr>
     </table>
 
     <h2 style="margin-top:48px">Common Applications</h2>
@@ -347,6 +422,30 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
         Inquire on WhatsApp
       </a>
+    </div>
+
+    <h2 style="margin-top:48px">Frequently Asked Questions</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What are the advantages of ABC over bare overhead conductors?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">ABC eliminates phase-to-phase short circuits from wind-induced clashing, reduces electrocution risk, deters electricity theft, requires narrower right-of-way, and allows lines to run closer to buildings and vegetation. Insulated conductors also eliminate the visual impact and corrosion issues of bare wires.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">XLPE or HDPE insulation — which should I choose?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">XLPE (90°C) provides higher current capacity and is recommended for hot climates and higher loading. HDPE (75°C) is more economical and performs well in moderate climates. Both are UV-stabilized for 25+ years outdoor service. We can quote both options.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What core configurations can you supply?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">2-core (phase + neutral), 3-core, 4-core (3 phases + neutral), and 4-core plus separate messenger. Messenger wire options: bare aluminium alloy, ACSR, or insulated and integrated into the bundle. Configurations are matched to your local distribution standard.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What is the typical span length between poles?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Typical spans are 30–60 meters. Longer spans up to 80 meters are possible with larger messenger cross-sections. We provide sag-tension calculations matched to your local wind zone, ice loading, and pole spacing requirements.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Do you offer ABC with a separate messenger wire?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Yes. Both integrated-messenger (messenger twisted within the insulated bundle) and separate-messenger (bare ACSR or aluminium alloy messenger lashed outside) designs are available. The choice depends on your utility's installation standard and span length requirements.</p>
+      </details>
     </div>
 
     <h2 style="margin-top:48px">Related Products</h2>

@@ -40,6 +40,39 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between control cables and power cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Control cables transmit signals and commands to operate equipment (relays, contactors, PLC I/O, instrumentation loops) — they carry low current at low voltage, typically 300/500V. Power cables transmit electrical energy to drive motors, lighting, and machinery. Control cables have more cores (2 to 61), smaller conductor sizes, and are often shielded for signal integrity." }
+      },
+      {
+        "@type": "Question",
+        "name": "When do I need a shielded control cable?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Shielded control cables are required when the signal can be affected by electromagnetic interference (EMI) from nearby power cables, motors, VFDs, or radio transmitters. The shield (aluminium/PET tape with tinned copper drain wire) reflects and conducts EMI to ground. Unshielded control cables are sufficient for simple on/off signals in electrically quiet environments." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many cores can you supply in a control cable?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We supply control cables from 2 cores to 61 cores. Common configurations are 3, 4, 5, 7, 12, 19, 27, 37 and 61 cores. Cores are numbered or colour-coded per IEC 60445 or customer specification. Custom core counts can be manufactured for volume orders." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can control cables be armoured?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Control cables can be supplied with SWA (steel wire armour) or STA (steel tape armour) for mechanical protection in outdoor installations, direct burial, and industrial plant environments. For lighter protection, a steel wire braid can also be supplied. Armoured control cables are commonly specified for oil & gas, petrochemical, and heavy industry projects." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the voltage rating of control cables?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Standard control cables are rated 300/500V (Uo/U) per IEC 60227. For applications requiring higher voltage — such as VFD control, motor auxiliaries, or industrial equipment wiring — 0.6/1kV-rated control cables are available. Specify the voltage rating when requesting a quote." }
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -69,7 +102,7 @@
     @media(max-width:768px) {
       .nav-links { display: none; }
     }
-    .page-hero { background: var(--navy); padding: 120px 6% 64px; color: #fff; }
+    .page-hero { background: linear-gradient(105deg, rgba(10,10,15,0.94) 32%, rgba(10,10,15,0.48) 100%), url('../assets/images/products/control-cables.webp') center/cover no-repeat; padding: 120px 6% 64px; color: #fff; position: relative; }
     .page-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
     .page-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
     .page-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
@@ -298,6 +331,12 @@
     <div class="pill">PVC / XLPE</div>
     <div class="pill">Shielded Option</div>
   </div>
+  <div class="hero-btns" style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%2C%20I'd%20like%20a%20quote%20for%20Control%20Cables.&type=phone_number&app_absent=0" class="btn-primary" target="_blank" rel="noopener" style="background:var(--gold);color:var(--navy-dark);padding:16px 36px;font-weight:700;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;font-size:1rem;transition:all 0.2s;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Quote via WhatsApp
+    </a>
+  </div>
 </section>
 
 <section>
@@ -321,6 +360,46 @@
       <tr><td>Minimum Installation Temperature</td><td>-5&deg;C; consult for cold-climate jacketing</td></tr>
       <tr><td>Bending Radius</td><td>8D for fixed installation; 12D for flexible service</td></tr>
       <tr><td>Packaging</td><td>Wooden drums; coils for small core-count cables (&le;12 cores, &le;2.5mm&sup2;)</td></tr>
+    </table>
+
+    <h2 style="margin-top:48px">Cable Structure</h2>
+    <div class="structure-diagram" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:28px 32px;margin-top:16px;">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">1</div>
+          <div><strong style="color:var(--navy);">Conductors</strong> — Plain or tinned copper, Class 1 (solid) for small cross-sections up to 2.5mm², or Class 2 (stranded) for 4mm² and above. 2 to 61 individually insulated cores, numbered or colour-coded for termination identification.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">2</div>
+          <div><strong style="color:var(--navy);">Core Insulation</strong> — PVC (70°C) or XLPE (90°C). Cores are numbered sequentially, or colour-coded per IEC 60445 (black with white numbers, or individual colours). Insulation thickness per IEC 60227 voltage class.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">3</div>
+          <div><strong style="color:var(--navy);">Core Assembly</strong> — Cores laid up in concentric layers with optimal lay length. Filler materials (PVC or non-hygroscopic) fill interstices to achieve a round cross-section. Binder tape applied over the assembled core bundle.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--gold);color:var(--navy-dark);min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">4*</div>
+          <div><strong style="color:var(--navy);">Screen/Shield (Optional)</strong> — Aluminium/PET tape applied helically with 100% coverage plus tinned copper drain wire in contact with the aluminium. Provides EMI protection. For critical signals, an overall tinned copper braid can be supplied for superior shielding performance.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">5</div>
+          <div><strong style="color:var(--navy);">Inner Sheath + Armour (Optional)</strong> — Extruded PVC bedding, followed by SWA or STA armour if mechanical protection is specified. For unarmoured cables: a single outer sheath is applied directly over the core assembly or screen.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;">
+          <div style="background:var(--navy);color:#fff;min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;">6</div>
+          <div><strong style="color:var(--navy);">Outer Sheath</strong> — PVC (standard black or grey), LSZH (for public buildings and enclosed spaces), or PE (for outdoor and direct burial). Embossed with core count, cross-section, and meter marks.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Applicable Standards</h2>
+    <table class="specs-table">
+      <tr><th>Standard</th><th>Scope</th></tr>
+      <tr><td>IEC 60227</td><td>Polyvinyl chloride insulated cables — control and signal cables</td></tr>
+      <tr><td>IEC 60332-1</td><td>Flame retardant test for single cable</td></tr>
+      <tr><td>IEC 61034</td><td>Smoke density measurement (when LSZH sheath is specified)</td></tr>
+      <tr><td>BS 5308</td><td>British Standard for instrumentation cables (PE/XLPE insulated, shielded)</td></tr>
+      <tr><td>EN 50288</td><td>European standard for multi-element metallic cables for analogue and digital communication</td></tr>
     </table>
 
     <h2 style="margin-top:48px">Common Applications</h2>
@@ -349,6 +428,30 @@
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
         Inquire on WhatsApp
       </a>
+    </div>
+
+    <h2 style="margin-top:48px">Frequently Asked Questions</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:14px;margin-top:20px;">
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What's the difference between control cable and power cable?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Control cables carry signals and commands (low current, 300/500V) to operate relays, contactors, and PLC I/O. Power cables transmit energy to drive motors and machinery. Control cables have more cores (2–61), smaller conductor sizes, and are often shielded against EMI.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Do I need shielded control cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Shielded control cables are needed when signals may be disrupted by EMI from nearby power cables, motors, or VFDs. The shield — aluminium/PET tape with tinned copper drain wire — reflects EMI to ground. Unshielded is fine for simple on/off signals in quiet electrical environments.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">How many cores are available?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">From 2 to 61 cores. Common configurations: 3, 4, 5, 7, 12, 19, 27, 37 and 61 cores. Cores are numbered or colour-coded per IEC 60445. Custom core counts available for volume orders.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">Can control cables be armoured?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Yes. SWA (steel wire armour) or STA (steel tape armour) is available for outdoor, direct burial, and heavy industrial installations. For lighter mechanical protection, a steel wire braid can be supplied. Armoured control cables are common in oil & gas and petrochemical projects.</p>
+      </details>
+      <details style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 22px;cursor:pointer;">
+        <summary style="font-weight:700;color:var(--gray-800);font-size:0.98rem;">What is the voltage rating of control cables?</summary>
+        <p style="margin-top:12px;color:var(--gray-600);line-height:1.7;">Standard control cables are 300/500V per IEC 60227. For applications like VFD control or motor auxiliaries, 0.6/1kV-rated control cables are available. Always specify the voltage class when requesting a quote.</p>
+      </details>
     </div>
 
     <h2 style="margin-top:48px">Related Products</h2>
