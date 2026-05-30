@@ -313,7 +313,7 @@
     }
     .hero-overlay {
       position: absolute; inset: 0; z-index: 1;
-      background: linear-gradient(105deg, rgba(15,36,64,0.92) 40%, rgba(15,36,64,0.35) 70%, rgba(15,36,64,0.15) 100%);
+      background: linear-gradient(105deg, rgba(10,10,15,0.94) 38%, rgba(10,10,15,0.50) 68%, rgba(10,10,15,0.22) 100%);
     }
     .hero-content { position: relative; z-index: 2; max-width: 720px; padding: 0 6%; padding-top: 40px; }
     .hero-badge {
@@ -682,6 +682,7 @@
       .footer-top { grid-template-columns: 1fr 1fr 1fr; }
     }
     @media(max-width:768px) {
+      #hero { min-height: 92vh; }
       nav { height: 60px; }
       .nav-links { display: none; position: fixed; top: 60px; left: 0; right: 0; background: rgba(255,255,255,0.98); flex-direction: column; padding: 24px; gap: 16px; border-bottom: 1px solid var(--gray-200); backdrop-filter: blur(12px); }
       .nav-links.open { display: flex; }
@@ -695,12 +696,17 @@
       .certs-grid { grid-template-columns: repeat(4, 1fr); }
     }
     @media(max-width:480px) {
-      h1 { font-size: 1.9rem; }
-      section { padding: 60px 5%; }
-      .hero-content { padding-top: 0; }
+      #hero { min-height: 88vh; }
+      h1 { font-size: 1.82rem; }
+      section { padding: 56px 4%; }
+      .hero-content { padding: 0 2%; padding-top: 0; }
       .hero-btns { flex-direction: column; }
-      .stats-strip { gap: 20px; }
-      .stat-num { font-size: 2rem; }
+      .hero-btns .btn-primary, .hero-btns .btn-outline { width: 100%; text-align: center; justify-content: center; }
+      .hero-pills { gap: 8px; }
+      .pill { font-size: 0.72rem; padding: 5px 11px; }
+      .hero-sub { font-size: 0.92rem; }
+      .stats-strip { gap: 16px; }
+      .stat-num { font-size: 1.9rem; }
       .certs-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
@@ -904,20 +910,20 @@
 <section id="hero">
   <div class="hero-carousel">
     <div class="hero-slide active">
-      <img class="hero-slide-img" src="assets/images/hero-cable-factory.webp" alt="Amperon Cables Factory Production Line" width="1920" height="1080" onerror="this.style.display='none'">
-      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#0F2440 30%,#1A365D 60%,#234B7A 100%)"></div>
+      <img class="hero-slide-img" src="assets/images/hero-cable-factory.webp" alt="Amperon Cables Factory Production Line" width="1920" height="1080" decoding="sync" onerror="this.style.display='none'">
+      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#0A0A0F 30%,#12121A 60%,#1C1C28 100%)"></div>
     </div>
     <div class="hero-slide">
-      <img class="hero-slide-img" src="assets/images/hero-cable-factory.webp" alt="Power Cable Drums Ready for Export" width="1920" height="1080" loading="lazy" onerror="this.style.display='none'">
-      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#1A365D 20%,#0F2440 50%,#2C5A8A 100%)"></div>
+      <img class="hero-slide-img" src="assets/images/factory/why-us-factory-production-line.webp" alt="Amperon Cables Manufacturing Workshop — Extrusion Line" width="1920" height="1080" decoding="async" onerror="this.style.display='none'">
+      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#12121A 20%,#0A0A0F 50%,#1C1C28 100%)"></div>
     </div>
     <div class="hero-slide">
-      <img class="hero-slide-img" src="assets/images/hero-cable-factory.webp" alt="Cable Testing & Quality Control Lab" width="1920" height="1080" loading="lazy" onerror="this.style.display='none'">
-      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#122D4A 30%,#1E4168 60%,#0F2440 100%)"></div>
+      <img class="hero-slide-img" src="assets/images/products/mv-power-cables.webp" alt="Medium Voltage Power Cables 6/35kV — XLPE Insulated" width="1920" height="1080" decoding="async" onerror="this.style.display='none'">
+      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#0A0A0F 30%,#1C1C28 60%,#12121A 100%)"></div>
     </div>
     <div class="hero-slide">
-      <img class="hero-slide-img" src="assets/images/hero-cable-factory.webp" alt="Power Cable Manufacturing Detail" width="1920" height="1080" loading="lazy" onerror="this.style.display='none'">
-      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#234B7A 20%,#0F2440 50%,#1A365D 100%)"></div>
+      <img class="hero-slide-img" src="assets/images/products/swa-armored-power-cables.webp" alt="SWA Steel Wire Armored Power Cables — Direct Burial Grade" width="1920" height="1080" decoding="async" onerror="this.style.display='none'">
+      <div class="hero-slide-fallback" style="background:linear-gradient(135deg,#1C1C28 20%,#0A0A0F 50%,#12121A 100%)"></div>
     </div>
     <div class="hero-carousel-dots">
       <button class="hero-dot active" aria-label="Slide 1"></button>
@@ -974,7 +980,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/lv-power-cables.webp" type="image/webp">
-          <img src="assets/images/products/lv-power-cables.jpg" alt="LV Power Cables 0.6/1kV" loading="lazy">
+          <img src="assets/images/products/lv-power-cables.jpg" alt="LV Power Cables 0.6/1kV" width="800" height="500" loading="lazy" decoding="async">
         </picture>
         <span class="img-tag">Best Seller</span>
       </div>
@@ -1001,7 +1007,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/mv-power-cables.webp" type="image/webp">
-          <img src="assets/images/products/mv-power-cables.jpg" alt="MV Power Cables 6/35kV" loading="lazy">
+          <img src="assets/images/products/mv-power-cables.jpg" alt="MV Power Cables 6/35kV" width="800" height="500" loading="lazy" decoding="async">
         </picture>
         <span class="img-tag">Industrial Grade</span>
       </div>
@@ -1028,7 +1034,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/swa-armored-power-cables.webp" type="image/webp">
-          <img src="assets/images/products/swa-armored-power-cables.jpg" alt="SWA Armored Power Cables" loading="lazy">
+          <img src="assets/images/products/swa-armored-power-cables.jpg" alt="SWA Armored Power Cables" width="800" height="500" loading="lazy" decoding="async">
         </picture>
         <span class="img-tag">Heavy Duty</span>
       </div>
@@ -1055,7 +1061,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/rubber-flexible-cables.webp" type="image/webp">
-          <img src="assets/images/products/rubber-flexible-cables.jpg" alt="Rubber Flexible Cables" loading="lazy">
+          <img src="assets/images/products/rubber-flexible-cables.jpg" alt="Rubber Flexible Cables" width="800" height="500" loading="lazy" decoding="async">
         </picture>
       </div>
       <div class="product-info">
@@ -1081,7 +1087,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/overhead-abc-cables.webp" type="image/webp">
-          <img src="assets/images/products/overhead-abc-cables.jpg" alt="Overhead ABC Cables" loading="lazy">
+          <img src="assets/images/products/overhead-abc-cables.jpg" alt="Overhead ABC Cables" width="800" height="500" loading="lazy" decoding="async">
         </picture>
       </div>
       <div class="product-info">
@@ -1107,7 +1113,7 @@
       <div class="product-img">
         <picture>
           <source srcset="assets/images/products/control-cables.webp" type="image/webp">
-          <img src="assets/images/products/control-cables.jpg" alt="Control Cables" loading="lazy">
+          <img src="assets/images/products/control-cables.jpg" alt="Control Cables" width="800" height="500" loading="lazy" decoding="async">
         </picture>
       </div>
       <div class="product-info">
