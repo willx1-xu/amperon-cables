@@ -725,6 +725,135 @@
       }
       .wa-float { bottom: 72px; }
     }
+  
+    /* ===== UNIFIED NAV (generated) ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6%; height: 64px;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200);
+      box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,0.04));
+    }
+    .logo {
+      display: flex; align-items: center; gap: 8px;
+      text-decoration: none; color: var(--navy);
+      font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem;
+      letter-spacing: 1.5px;
+    }
+    .logo-img { height: 32px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links > li > a {
+      color: var(--gray-600); text-decoration: none;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.6px;
+      text-transform: uppercase; transition: color 0.2s; padding: 4px 0; position: relative;
+    }
+    .nav-links > li > a::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
+      background: var(--navy); border-radius: 2px; transition: width 0.25s;
+    }
+    .nav-links > li > a:hover { color: var(--navy); }
+    .nav-links > li > a:hover::after { width: 100%; }
+    .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; transition: all 0.25s !important; }
+    .nav-cta:hover { background: var(--navy-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .nav-cta::after { display: none !important; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: ' \\25BE'; }
+    .nav-dropdown .dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 10px); left: 50%;
+      transform: translateX(-50%); background: #fff; border: 1px solid var(--gray-200);
+      border-radius: 10px; padding: 8px 0; min-width: 210px; list-style: none;
+      z-index: 2000; box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .nav-dropdown .dropdown-menu::before {
+      content: ''; position: absolute; top: -6px; left: 50%; transform: translateX(-50%);
+      border: 6px solid transparent; border-bottom-color: var(--gray-200); border-top: none;
+    }
+    .nav-dropdown:hover .dropdown-menu { display: block; }
+    .nav-dropdown .dropdown-menu li a {
+      display: block; padding: 10px 20px; color: var(--gray-600); font-size: 0.84rem;
+      text-decoration: none; white-space: nowrap; transition: all 0.15s;
+    }
+    .nav-dropdown .dropdown-menu li a:hover { color: var(--navy); background: var(--gray-50); padding-left: 26px; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .nav-toggle span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; display: block; }
+
+    /* ===== UNIFIED FOOTER ===== */
+    footer { background: var(--gray-900); padding: 60px 6% 32px; color: #fff; text-align: left; }
+    .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr 1.3fr; gap: 48px; margin-bottom: 48px; }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.3rem; letter-spacing: 2px; margin-bottom: 14px; color: #fff; }
+    .footer-tagline { color: var(--gray-400); font-size: 0.87rem; line-height: 1.7; max-width: 260px; margin-bottom: 16px; }
+    .footer-wa-link { display: inline-flex; align-items: center; gap: 8px; background: var(--whatsapp); color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.82rem; transition: all 0.2s; }
+    .footer-wa-link:hover { background: #20bd5a; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 18px; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; list-style: none; padding: 0; }
+    .footer-links a { color: var(--gray-500); text-decoration: none; font-size: 0.87rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-links li { color: var(--gray-500); font-size: 0.87rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { color: var(--gray-500); font-size: 0.78rem; }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .wa-float {
+      position: fixed; bottom: 32px; left: 32px; z-index: 999;
+      width: 60px; height: 60px; border-radius: 50%;
+      box-shadow: 0 8px 32px rgba(37,211,102,0.4);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex; align-items: center; justify-content: center;
+      background: #25D366; text-decoration: none;
+      animation: wa-pulse 2s infinite;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(37,211,102,0.6); }
+    .wa-tooltip {
+      position: absolute; left: 75px; top: 50%; transform: translateY(-50%);
+      background: var(--gray-900); color: #fff; padding: 10px 18px;
+      border-radius: 8px; font-size: 0.82rem; font-weight: 700; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .wa-float:hover .wa-tooltip { opacity: 1; left: 70px; }
+    @keyframes wa-pulse { 0%,100%{ box-shadow: 0 0 0 0 rgba(37,211,102,0.5); } 70%{ box-shadow: 0 0 0 15px rgba(37,211,102,0); } }
+
+    /* ===== MOBILE STICKY CTA ===== */
+    .mobile-sticky-cta { display: none; }
+    @media(max-width:768px) {
+      .mobile-sticky-cta {
+        display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+        background: #fff; border-top: 1px solid var(--gray-200);
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+      }
+      .mobile-sticky-cta a {
+        flex: 1; text-align: center; padding: 14px 8px;
+        font-weight: 700; font-size: 0.82rem; text-decoration: none;
+        display: flex; align-items: center; justify-content: center; gap: 6px;
+      }
+      .mobile-sticky-cta .mob-wa {
+        background: var(--whatsapp); color: #fff;
+      }
+      .mobile-sticky-cta .mob-quote {
+        background: var(--navy); color: #fff;
+      }
+      .wa-float { bottom: 20px; left: 12px; width: 54px; height: 54px; }
+      .wa-tooltip { display: none; }
+    }
+
+    /* ===== RESPONSIVE (unified) ===== */
+    @media(max-width:960px) {
+      .footer-top { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    @media(max-width:768px) {
+      nav { height: 60px; }
+      .nav-links { display: none; position: fixed; top: 60px; left: 0; right: 0; background: rgba(255,255,255,0.98); flex-direction: column; padding: 24px; gap: 16px; border-bottom: 1px solid var(--gray-200); backdrop-filter: blur(12px); }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+      .nav-dropdown .dropdown-menu { display: block; position: static; transform: none; border: none; background: none; box-shadow: none; padding: 0 0 0 16px; border-left: 2px solid var(--gray-200); margin-top: 8px; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .wa-float { bottom: 72px; }
+    }
+    @media(max-width:480px) {
+      .footer-top { grid-template-columns: 1fr; }
+    }
+
   </style>
   <link rel="preload" as="image" href="assets/images/hero/hero-factory-line.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1478,8 +1607,8 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="certifications.html">Certifications</a></li>
         <li><a href="case-studies.html">Case Studies</a></li>
-        <li><a href="pricing-guide.html">Pricing & MOQ</a></li>
-        <li><a href="support.html">Support & FAQ</a></li>
+        <li><a href="pricing-guide.html">Pricing &amp; MOQ</a></li>
+        <li><a href="support.html">Support &amp; FAQ</a></li>
         <li><a href="#quote">Get Quote</a></li>
       </ul>
     </div>
@@ -1643,5 +1772,21 @@
     }
   })();
 </script>
+
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-sticky-cta">
+  <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="mob-wa" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+    WhatsApp
+  </a>
+  <a href="#quote" class="mob-quote">Get Quote</a>
+</div>
+
+<a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+</a>
+
 </body>
 </html>

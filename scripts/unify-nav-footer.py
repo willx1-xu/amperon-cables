@@ -1,97 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copper vs Aluminium Conductors: Cost, Performance & Selection Guide | Amperon Cables</title>
-  <meta name="description" content="Compare conductivity, weight, cost, and durability to decide between copper and aluminium conductors for your power cable order. A data-driven guide for B2B buyers.">
-  <meta name="geo.placename" content="Shenzhen, Guangdong, China">
-  <meta name="geo.region" content="CN-GD">
-  <link rel="canonical" href="https://willx1-xu.github.io/amperon-cables/blog/copper-vs-aluminium-conductors.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Copper vs Aluminium Conductors: Cost, Performance & Selection Guide",
-    "datePublished": "2026-05-24",
-    "author": {"@type": "Organization", "name": "Amperon Cables"},
-    "publisher": {"@type": "Organization", "name": "Amperon Cables", "url": "https://willx1-xu.github.io/amperon-cables/"},
-    "articleSection": "Buying Guide",
-    "description": "Compare conductivity, weight, cost, and durability to decide between copper and aluminium conductors for your cable order."
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://willx1-xu.github.io/amperon-cables/"},
-      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://willx1-xu.github.io/amperon-cables/#blog"},
-      {"@type": "ListItem", "position": 3, "name": "Copper vs Aluminium Conductors"}
-    ]
-  }
-  </script>
-  <style>
-    :root {
-      --navy: #1A365D; --navy-dark: #0F2440; --navy-light: #234B7A;
-      --gold: #C9A84C; --gold-light: #E8C96A;
-      --white: #FFFFFF; --gray-50: #F8FAFC; --gray-100: #F1F5F9; --gray-200: #E2E8F0;
-      --gray-300: #CBD5E1; --gray-400: #94A3B8; --gray-500: #64748B; --gray-600: #475569;
-      --gray-700: #334155; --gray-800: #1E293B; --gray-900: #0F172A;
-      --whatsapp: #25D366;
-      --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: var(--white); color: var(--gray-800); line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 6%; height: 64px;
-      background: rgba(255,255,255,0.94); backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--gray-200); box-shadow: var(--shadow-xs);
-    }
-    .logo {
-      display: flex; align-items: center; gap: 8px; text-decoration: none;
-      color: var(--navy); font-family: 'Montserrat', sans-serif; font-weight: 800;
-      font-size: 1.2rem; letter-spacing: 1.5px;
-    }
-    .logo-img { height: 32px; }
-    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-    .nav-links a { color: var(--gray-600); text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--navy); }
-    @media(max-width:768px){ .nav-links { display: none; } }
-    article { max-width: 760px; margin: 100px auto 60px; padding: 0 24px; }
-    .article-cat { display: inline-block; background: var(--navy); color: #fff; padding: 4px 14px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
-    .article-date { color: var(--gray-400); font-size: 0.85rem; margin-bottom: 12px; }
-    h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2rem; color: var(--gray-900); line-height: 1.3; margin-bottom: 24px; }
-    h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; color: var(--navy); margin: 40px 0 16px; }
-    p { color: var(--gray-600); font-size: 1rem; line-height: 1.85; margin-bottom: 18px; }
-    ul { margin: 0 0 20px 20px; }
-    ul li { color: var(--gray-600); font-size: 0.95rem; line-height: 1.9; }
-    .cta-box { background: var(--navy); border-radius: 14px; padding: 36px; text-align: center; margin: 48px 0 0; }
-    .cta-box h3 { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.2rem; margin-bottom: 10px; }
-    .cta-box p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-bottom: 20px; }
-    .btn-wa { display: inline-flex; align-items: center; gap: 8px; background: var(--whatsapp); color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px; transition: all 0.2s; }
-    .btn-wa:hover { background: #20bd5a; transform: translateY(-2px); }
-    .btn-back { display: inline-flex; align-items: center; gap: 6px; color: var(--navy); font-weight: 700; font-size: 0.85rem; text-decoration: none; margin-bottom: 32px; }
-    .btn-back:hover { color: var(--gold); }
-    footer { background: var(--gray-900); padding: 40px 6% 24px; color: #fff; text-align: center; }
-    footer p { color: var(--gray-500); font-size: 0.82rem; margin: 0; }
-    footer a { color: var(--gold); text-decoration: none; }
-    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 998; width: 56px; height: 56px; background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.2s; }
-    .wa-float:hover { transform: scale(1.1); }
-    .wa-float svg { width: 26px; height: 26px; fill: #fff; }
-  
+#!/usr/bin/env python3
+"""
+Unify navigation and footer across all cable-catalog HTML pages.
+
+Replaces nav, footer, related CSS, mobile sticky CTA, and nav toggle JS
+in all 48 HTML files. Handles two directory depths:
+  - Root pages (7):  index.html, about.html, certifications.html, etc.
+  - Sub pages  (41): products/*, blog/*, applications/*, compare/*
+
+Generates pure static HTML — no runtime includes, no build step needed.
+
+Usage:
+    cd d:/cc安装/projects/cable-catalog
+    python scripts/unify-nav-footer.py
+"""
+
+import re
+import os
+from pathlib import Path
+
+ROOT = Path(os.path.dirname(os.path.abspath(__file__))).parent
+
+# ---------------------------------------------------------------------------
+# Pages by directory depth
+# ---------------------------------------------------------------------------
+ROOT_PAGE_NAMES = {
+    'index.html', 'about.html', 'certifications.html',
+    'case-studies.html', 'pricing-guide.html', 'support.html',
+    'glossary.html'
+}
+
+# ---------------------------------------------------------------------------
+# Unified CSS block — inserted just before </style>
+# These rules handle nav, dropdown, footer, mobile CTA, WhatsApp float,
+# and responsive breakpoints. They override any old nav/footer styles.
+# ---------------------------------------------------------------------------
+UNIFIED_CSS = """
     /* ===== UNIFIED NAV (generated) ===== */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 999;
@@ -219,12 +162,53 @@
     @media(max-width:480px) {
       .footer-top { grid-template-columns: 1fr; }
     }
+"""
 
-  </style>
-</head>
-<body>
+# ---------------------------------------------------------------------------
+# Nav HTML — root variant (paths relative to project root)
+# ---------------------------------------------------------------------------
+NAV_HTML_ROOT = """<!-- NAV -->
+<nav>
+  <a href="/" class="logo">
+    <img src="assets/brand/amperon-logo.svg" alt="Amperon Cables" class="logo-img">
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li class="nav-dropdown">
+      <a href="#products">Products</a>
+      <ul class="dropdown-menu">
+        <li><a href="products/lv-power-cables.html">LV Power Cables</a></li>
+        <li><a href="products/mv-power-cables.html">MV Power Cables</a></li>
+        <li><a href="products/swa-armored-power-cables.html">SWA Armored Cables</a></li>
+        <li><a href="products/rubber-flexible-cables.html">Rubber Flexible Cables</a></li>
+        <li><a href="products/overhead-abc-cables.html">Overhead ABC Cables</a></li>
+        <li><a href="products/control-cables.html">Control Cables</a></li>
+        <li><a href="#products">More Cable Types &darr;</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">Factory</a></li>
+    <li><a href="certifications.html">Quality</a></li>
+    <li class="nav-dropdown">
+      <a href="#resources">Resources</a>
+      <ul class="dropdown-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="compare/">Comparison Guides</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </li>
+    <li><a href="#quote" class="nav-cta">Get Quote</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+</nav>"""
 
-<!-- NAV -->
+# ---------------------------------------------------------------------------
+# Nav HTML — subdirectory variant (paths with ../ prefix)
+# ---------------------------------------------------------------------------
+NAV_HTML_SUB = """<!-- NAV -->
 <nav>
   <a href="../" class="logo">
     <img src="../assets/brand/amperon-logo.svg" alt="Amperon Cables" class="logo-img">
@@ -260,59 +244,78 @@
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
   </button>
-</nav>
+</nav>"""
 
-<article>
-  <a href="../#blog" class="btn-back">← Back to Insights</a>
-  <div class="article-cat">Buying Guide</div>
-  <div class="article-date">Published: May 24, 2026</div>
-  <h1>Copper vs Aluminium Conductors: Cost, Performance & Selection Guide</h1>
-  <p>The choice between copper and aluminium conductors is often the single biggest cost decision in a cable procurement project. But price is only one factor — conductivity, weight, jointing requirements, and long-term reliability all play critical roles. This guide compares the two materials across every dimension that matters to B2B buyers.</p>
-
-  <h2>Quick Comparison at a Glance</h2>
-  <p>Here's the headline data before we go into detail:</p>
-  <ul>
-    <li><strong>Conductivity:</strong> Copper 58 MS/m vs Aluminium 36 MS/m — copper is ~60% more conductive</li>
-    <li><strong>Density:</strong> Copper 8.9 g/cm³ vs Aluminium 2.7 g/cm³ — aluminium is 70% lighter</li>
-    <li><strong>Price (per tonne):</strong> Copper ~$9,000 vs Aluminium ~$2,600 — aluminium is roughly 3.5× cheaper by weight</li>
-    <li><strong>Effective cost (per amp carried):</strong> Aluminium typically 30-50% cheaper, despite requiring a larger cross-section</li>
-    <li><strong>Tensile strength:</strong> Copper ~210 MPa (annealed) vs Aluminium ~70 MPa — copper is mechanically stronger</li>
-  </ul>
-
-  <h2>Conductivity and Sizing</h2>
-  <p>Because aluminium has lower conductivity, an aluminium conductor must have approximately 1.6× the cross-sectional area of a copper conductor to carry the same current. For example, a 240mm² aluminium cable carries roughly the same current as a 150mm² copper cable. This has knock-on effects: the aluminium cable is physically larger (needs more space in conduit or tray), has a larger minimum bend radius (important during installation), and requires larger drums for shipping. However, even at 1.6× the cross-section, the aluminium conductor typically weighs about half as much as the equivalent copper conductor — a significant advantage in overhead installations, long cable runs, and applications where cable weight is a structural concern.</p>
-
-  <h2>Weight and Installation</h2>
-  <p>Weight matters more than many buyers realize. A heavier cable means: more labour to pull and install, stronger support structures required, higher shipping costs (cables are heavy — a single 1,000m drum can weigh several tonnes), and more difficult handling on site, especially for MV cables with their larger diameters. Aluminium's 70% weight advantage is particularly valuable in overhead transmission (ABC cables) and in retrofit projects where existing cable trays and supports have limited load capacity.</p>
-
-  <h2>Corrosion and Longevity</h2>
-  <p>Copper has excellent natural corrosion resistance. In most environments, copper forms a stable patina that protects the underlying metal. Aluminium is more reactive — it forms an oxide layer instantly on exposure to air, which is protective but also electrically insulating. This creates challenges at termination points: aluminium oxide on the conductor surface increases contact resistance, which can cause overheating at joints. For this reason, aluminium terminations require careful preparation (wire brushing, anti-oxidant compound) and lugs rated for aluminium. When properly installed, aluminium cable systems have service lives comparable to copper. In marine or highly corrosive environments, copper is generally preferred due to its superior corrosion resistance.</p>
-
-  <h2>Termination and Compatibility</h2>
-  <p>Copper is straightforward to terminate — standard copper lugs, standard tooling, no special preparation beyond cleanliness. Aluminium requires: (1) Oxide removal — wire brushing the conductor immediately before termination. (2) Joint compound — applying anti-oxidant paste to prevent oxide re-formation. (3) Compatible connectors — bi-metallic lugs (aluminium barrel with copper palm) when connecting to copper busbars or terminals. (4) Torque control — aluminium is softer and creeps under sustained pressure; connections must be torqued correctly and checked periodically. If your installation team is unfamiliar with aluminium, the learning curve can add time and risk.</p>
-
-  <h2>Which One Should You Choose?</h2>
-  <p>There's no universal answer — it depends on your project's priorities:</p>
-  <ul>
-    <li><strong>Choose copper when:</strong> space is constrained (smaller cross-section for the same current), installation is in a corrosive or marine environment, termination skill levels are uncertain, reliability is the absolute priority (hospitals, data centres), or the project specification mandates copper.</li>
-    <li><strong>Choose aluminium when:</strong> budget is the primary driver, cable runs are long (overhead lines, large-site distribution), weight is a structural concern, or the project has experienced electricians who know aluminium termination procedures.</li>
-  </ul>
-  <p>Many of our customers take a hybrid approach: copper for MV feeders and critical circuits, aluminium for long LV distribution runs and overhead ABC. Both are fully supported by IEC 60502 and national standards.</p>
-
-  <h2>Can You Get Both Quoted?</h2>
-  <p>Yes. At Amperon Cables, we routinely quote both copper and aluminium versions of the same specification so you can compare total project cost — not just the cable price, but the impact on shipping, installation, and accessories. Contact us with your specification and we'll provide both options within 24 hours.</p>
-
-  <div class="cta-box">
-    <h3>Want a copper vs aluminium cost comparison?</h3>
-    <p>Send us your cable specification and we'll quote both conductor options so you can make an informed decision.</p>
-    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20a%20cost%20comparison%20between%20copper%20and%20aluminium%20conductors%20for%20my%20cable%20order.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-      Chat on WhatsApp
-    </a>
+# ---------------------------------------------------------------------------
+# Footer HTML — root variant
+# ---------------------------------------------------------------------------
+FOOTER_HTML_ROOT = """<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">AMPERON CABLES</div>
+      <p class="footer-tagline">Factory-direct B2B power cable manufacturer. Quality cables, competitive pricing, worldwide delivery.</p>
+      <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20to%20inquire%20about%20your%20cables.&type=phone_number&app_absent=0" class="footer-wa-link" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links">
+        <li><a href="products/lv-power-cables.html">LV Power Cables</a></li>
+        <li><a href="products/mv-power-cables.html">MV Power Cables</a></li>
+        <li><a href="products/swa-armored-power-cables.html">Armored SWA Cables</a></li>
+        <li><a href="products/rubber-flexible-cables.html">Rubber Flexible Cables</a></li>
+        <li><a href="products/overhead-abc-cables.html">Overhead ABC Cables</a></li>
+        <li><a href="products/control-cables.html">Control Cables</a></li>
+        <li><a href="products/solar-pv-dc-cables.html">Solar PV DC Cables</a></li>
+        <li><a href="products/fire-resistant-cables.html">Fire-Resistant Cables</a></li>
+        <li><a href="products/lszh-cables.html">LSZH Cables</a></li>
+        <li><a href="products/trailing-mining-cables.html">Trailing/Mining Cables</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="pricing-guide.html">Pricing &amp; MOQ</a></li>
+        <li><a href="support.html">Support &amp; FAQ</a></li>
+        <li><a href="#quote">Get Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Applications</div>
+      <ul class="footer-links">
+        <li><a href="applications/mining-cables.html">Mining Cables</a></li>
+        <li><a href="applications/construction-cables.html">Construction Cables</a></li>
+        <li><a href="applications/power-distribution-cables.html">Power Distribution</a></li>
+        <li><a href="applications/oil-gas-cables.html">Oil &amp; Gas Cables</a></li>
+        <li><a href="applications/industrial-manufacturing-cables.html">Industrial Manufacturing</a></li>
+        <li><a href="applications/renewable-energy-cables.html">Renewable Energy</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:sales@amperoncables.com">sales@amperoncables.com</a></li>
+        <li><a href="tel:+8613201571341">+86 132 0157 1341</a></li>
+        <li>Export Department</li>
+        <li>China</li>
+      </ul>
+    </div>
   </div>
-</article>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 Amperon Cables. All rights reserved.</div>
+  </div>
+</footer>"""
 
-<!-- FOOTER -->
+# ---------------------------------------------------------------------------
+# Footer HTML — subdirectory variant
+# ---------------------------------------------------------------------------
+FOOTER_HTML_SUB = """<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div>
@@ -373,11 +376,12 @@
   <div class="footer-bottom">
     <div class="footer-copy">&copy; 2026 Amperon Cables. All rights reserved.</div>
   </div>
-</footer>
+</footer>"""
 
-
-
-
+# ---------------------------------------------------------------------------
+# Mobile sticky CTA + WhatsApp float (same for all pages)
+# ---------------------------------------------------------------------------
+MOBILE_CTA_HTML = """
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-sticky-cta">
   <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="mob-wa" target="_blank" rel="noopener">
@@ -390,7 +394,179 @@
 <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
   <span class="wa-tooltip">Chat on WhatsApp</span>
-</a>
+</a>"""
 
-</body>
-</html>
+# ---------------------------------------------------------------------------
+# Nav toggle JS (inserted before </body>)
+# ---------------------------------------------------------------------------
+NAV_TOGGLE_JS = """<script>
+  (function() {
+    var toggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+      });
+      navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          navLinks.classList.remove('open');
+        });
+      });
+    }
+  })();
+</script>"""
+
+# ---------------------------------------------------------------------------
+# Regex patterns
+# ---------------------------------------------------------------------------
+RE_NAV = re.compile(r'<!--\s*NAV\s*-->\s*<nav>.*?</nav>', re.DOTALL)
+RE_NAV_BARE = re.compile(r'<nav[^>]*>.*?</nav>', re.DOTALL)
+RE_FOOTER = re.compile(r'<!--\s*FOOTER\s*-->\s*<footer>.*?</footer>', re.DOTALL)
+RE_FOOTER_BARE = re.compile(r'<footer[^>]*>.*?</footer>', re.DOTALL)
+RE_OLD_WA_FLOAT = re.compile(r'<a[^>]*class="wa-float"[^>]*>.*?</a>', re.DOTALL)
+RE_OLD_MOBILE_CTA = re.compile(r'<!--\s*MOBILE STICKY CTA\s*-->.*?</div>\s*</div>', re.DOTALL)
+RE_END_STYLE = re.compile(r'(</style>)')
+RE_END_BODY = re.compile(r'(</body>)')
+RE_OLD_NAV_JS = re.compile(r'<script>\s*\(function\(\)\s*\{[^}]*var toggle[^<]*?</script>', re.DOTALL)
+RE_OLD_HAMBURGER_JS = re.compile(r'<script>[^<]*hamburger[^<]*</script>', re.DOTALL)
+
+
+def is_root_page(filename):
+    """Determine if a file is at the project root level."""
+    return filename in ROOT_PAGE_NAMES
+
+
+def get_depth(rel_path):
+    """Return 0 for root pages, 1 for subdirectory pages."""
+    parts = Path(rel_path).parts
+    # If the file is directly in root, depth=0
+    if len(parts) == 1:
+        return 0
+    return 1
+
+
+def process_file(filepath):
+    """Process a single HTML file — replace nav, footer, add CSS/JS/CTA."""
+    rel_path = filepath.relative_to(ROOT)
+    depth = get_depth(rel_path)
+    is_root = (depth == 0)
+
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    original = content
+    changed = False
+
+    # --- 1. Replace nav ---
+    nav_html = NAV_HTML_ROOT if is_root else NAV_HTML_SUB
+    m = RE_NAV.search(content)
+    if m:
+        content = content[:m.start()] + nav_html + content[m.end():]
+        changed = True
+    else:
+        m = RE_NAV_BARE.search(content)
+        if m:
+            content = content[:m.start()] + nav_html + content[m.end():]
+            changed = True
+
+    # --- 2. Replace footer ---
+    footer_html = FOOTER_HTML_ROOT if is_root else FOOTER_HTML_SUB
+    m = RE_FOOTER.search(content)
+    if m:
+        content = content[:m.start()] + footer_html + content[m.end():]
+        changed = True
+    else:
+        m = RE_FOOTER_BARE.search(content)
+        if m:
+            content = content[:m.start()] + footer_html + content[m.end():]
+            changed = True
+
+    # --- 3. Remove old WhatsApp float and mobile CTA (will be re-added) ---
+    m = RE_OLD_WA_FLOAT.search(content)
+    if m and 'wa-tooltip' not in m.group():  # don't remove the new one we just added
+        # Only remove if it's the old format (right side, different SVG)
+        if 'bottom: 28px; right: 28px' in content[max(0,m.start()-200):m.start()] or \
+           'position: fixed; bottom: 28px; left: 28px' in content[max(0,m.start()-200):m.start()]:
+            content = content[:m.start()] + content[m.end():]
+            changed = True
+
+    m = RE_OLD_MOBILE_CTA.search(content)
+    if m:
+        content = content[:m.start()] + content[m.end():]
+        changed = True
+
+    # --- 4. Insert unified CSS before </style> ---
+    m = RE_END_STYLE.search(content)
+    if m:
+        # Only insert if not already present
+        if 'UNIFIED NAV' not in content:
+            content = content[:m.start()] + UNIFIED_CSS + '\n  ' + content[m.start():]
+            changed = True
+
+    # --- 5. Remove old nav JS / hamburger JS ---
+    for pattern in [RE_OLD_NAV_JS, RE_OLD_HAMBURGER_JS]:
+        m = pattern.search(content)
+        if m:
+            content = content[:m.start()] + content[m.end():]
+            changed = True
+
+    # --- 6. Add mobile CTA + WhatsApp float before </body> ---
+    m = RE_END_BODY.search(content)
+    if m:
+        # Check if mobile-sticky-cta already exists
+        if 'mobile-sticky-cta' not in content[-3000:]:
+            content = content[:m.start()] + '\n' + MOBILE_CTA_HTML + '\n\n' + content[m.start():]
+            changed = True
+        # Add nav toggle JS
+        if 'navToggle' not in content[-3000:]:
+            content = content[:m.start()] + '\n' + NAV_TOGGLE_JS + '\n' + content[m.start():]
+            changed = True
+
+    # --- 7. Fix any "AMPERON" text appended after logo img in nav ---
+    #    (old blog pages had <a href=".."><img...>AMPERON</a>)
+    content = re.sub(
+        r'(<img src="[^"]*amperon-logo\.svg"[^>]*>)\s*AMPERON\s*</a>',
+        r'\1</a>',
+        content
+    )
+
+    if changed and content != original:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        return True
+    return False
+
+
+def main():
+    html_files = sorted(ROOT.rglob('*.html'))
+    processed = 0
+    skipped = 0
+    errors = []
+
+    for fp in html_files:
+        try:
+            if process_file(fp):
+                processed += 1
+                print(f'  ✓ {fp.relative_to(ROOT)}')
+            else:
+                skipped += 1
+                print(f'  - {fp.relative_to(ROOT)} (unchanged)')
+        except Exception as e:
+            errors.append((fp.relative_to(ROOT), str(e)))
+            print(f'  ✗ {fp.relative_to(ROOT)} ERROR: {e}')
+
+    print(f'\n{"="*60}')
+    print(f'Processed: {processed} files modified')
+    print(f'Skipped:   {skipped} files unchanged')
+    if errors:
+        print(f'Errors:    {len(errors)}')
+        for fp, err in errors:
+            print(f'  - {fp}: {err}')
+    print(f'{"="*60}')
+
+    return len(errors) == 0
+
+
+if __name__ == '__main__':
+    success = main()
+    sys.exit(0 if success else 1)
