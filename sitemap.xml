@@ -235,4 +235,82 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- NEW BLOG ARTICLES (2026-05-30) -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-sizing-calculation-guide.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-armor-types-explained.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-testing-factory-acceptance.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/understanding-cable-voltage-grades.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/blog/cable-drum-length-weight-calculation.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- COMPARISON GUIDES (2026-05-30) -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/copper-vs-aluminium-cable.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/lv-vs-mv-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/swa-vs-sta-armored-cable.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/xlpe-vs-pvc-insulation.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/compare/lszh-vs-pvc-sheath.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- GLOSSARY (2026-05-30) -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/glossary.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

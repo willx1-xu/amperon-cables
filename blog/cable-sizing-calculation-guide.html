@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cable Sizing Guide: How to Calculate Power Cable Cross-Section | Amperon Cables</title>
+  <link rel="canonical" href="https://willx1-xu.github.io/amperon-cables/blog/cable-sizing-calculation-guide.html">
+  <meta name="description" content="Step-by-step cable sizing calculation guide for procurement engineers. Learn voltage drop, ampacity derating, short-circuit requirements. IEC 60364-5-52, BS 7671 methodology." />
+  <meta name="keywords" content="cable sizing, cable cross-section calculation, ampacity calculation, cable derating, voltage drop cable sizing, short-circuit cable sizing, IEC 60364-5-52, cable selection guide, power cable sizing" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Cable Sizing Guide: How to Calculate Power Cable Cross-Section | Amperon Cables">
+  <meta property="og:description" content="Step-by-step cable sizing calculation guide for procurement engineers. Learn voltage drop, ampacity derating, short-circuit requirements. IEC 60364-5-52, BS 7671 methodology.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://willx1-xu.github.io/amperon-cables/blog/cable-sizing-calculation-guide.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cable Sizing Guide: How to Calculate the Right Cross-Section for Power Cables",
+    "datePublished": "2026-05-30",
+    "dateModified": "2026-05-30",
+    "author": { "@type": "Organization", "name": "Amperon Cables" },
+    "publisher": { "@type": "Organization", "name": "Amperon Cables", "url": "https://willx1-xu.github.io/amperon-cables/" },
+    "articleSection": "Technical Guide",
+    "description": "Step-by-step cable sizing calculation guide for procurement engineers. Learn ampacity with derating, voltage drop verification, and short-circuit withstand checks using IEC 60364-5-52 and BS 7671 methodology."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://willx1-xu.github.io/amperon-cables/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://willx1-xu.github.io/amperon-cables/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "Cable Sizing Guide", "item": "https://willx1-xu.github.io/amperon-cables/blog/cable-sizing-calculation-guide.html" }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1A365D; --navy-dark: #0F2440; --navy-light: #234B7A;
+      --gold: #C9A84C; --gold-light: #E8C96A; --gold-pale: #FBF6E8;
+      --white: #FFFFFF; --gray-50: #F8FAFC; --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0; --gray-300: #CBD5E1; --gray-400: #94A3B8;
+      --gray-500: #64748B; --gray-600: #475569; --gray-700: #334155;
+      --gray-800: #1E293B; --gray-900: #0F172A; --whatsapp: #25D366;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #fff; color: var(--gray-800); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6%; height: 64px;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200); box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--navy); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: 1.5px; }
+    .logo-img { height: 32px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links > li > a { color: var(--gray-600); text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; transition: color 0.2s; padding: 4px 0; }
+    .nav-links > li > a:hover { color: var(--navy); }
+    .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; }
+    @media(max-width:768px){ .nav-links { display: none; } }
+    .article-hero { background: var(--navy); padding: 120px 6% 56px; color: #fff; }
+    .article-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .article-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
+    .article-hero .category-tag { display: inline-block; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 760px; }
+    .article-hero .article-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 16px; }
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 6% 40px; }
+    .article-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--gray-900); margin: 44px 0 16px; }
+    .article-body h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--gray-800); margin: 32px 0 12px; }
+    .article-body p { color: var(--gray-600); font-size: 1rem; line-height: 1.85; margin-bottom: 18px; }
+    .article-body ul, .article-body ol { color: var(--gray-600); font-size: 0.95rem; line-height: 1.85; padding-left: 22px; margin-bottom: 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 0.9rem; border: 1px solid var(--gray-200); border-radius: 8px; overflow: hidden; }
+    .article-body th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-size: 0.8rem; font-weight: 700; }
+    .article-body td { padding: 10px 16px; border-bottom: 1px solid var(--gray-100); color: var(--gray-700); }
+    .article-body tr:nth-child(even) td { background: var(--gray-50); }
+    .highlight-box { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .highlight-box p { margin: 0; color: var(--gray-700); font-size: 0.92rem; }
+    .cta-box { background: var(--navy); border-radius: 14px; padding: 40px; text-align: center; margin: 48px 0; color: #fff; }
+    .cta-box h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 12px; }
+    .cta-box p { color: rgba(255,255,255,0.65); margin-bottom: 24px; }
+    .btn-wa { background: var(--whatsapp); color: #fff; padding: 16px 36px; border-radius: 7px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(37,211,102,0.3); transition: all 0.25s; }
+    .btn-wa:hover { background: #20bd5a; transform: translateY(-2px); }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
+    @media(max-width:768px){ .related-grid { grid-template-columns: 1fr; } }
+    .related-card { border: 1px solid var(--gray-200); border-radius: 10px; padding: 22px; text-decoration: none; color: inherit; transition: all 0.25s; display: block; }
+    .related-card:hover { border-color: var(--navy); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .related-card h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--gray-900); margin-bottom: 6px; }
+    .related-card p { font-size: 0.82rem; color: var(--gray-500); margin: 0; }
+    footer { background: var(--gray-900); padding: 48px 6% 24px; color: #fff; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+    @media(max-width:768px){ .footer-top { grid-template-columns: 1fr 1fr; } }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline { color: var(--gray-400); font-size: 0.84rem; line-height: 1.7; max-width: 260px; margin-bottom: 14px; }
+    .footer-wa-link { display: inline-flex; align-items: center; gap: 6px; background: var(--whatsapp); color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.8rem; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px; }
+    .footer-links { display: flex; flex-direction: column; gap: 8px; list-style: none; padding: 0; }
+    .footer-links a { color: var(--gray-500); text-decoration: none; font-size: 0.84rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; color: var(--gray-500); font-size: 0.76rem; }
+    .wa-float { position: fixed; bottom: 28px; left: 28px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 6px 24px rgba(37,211,102,0.35); display: flex; align-items: center; justify-content: center; background: #25D366; text-decoration: none; transition: transform 0.3s; }
+    .wa-float:hover { transform: scale(1.1); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="/amperon-cables/" class="logo"><img src="../assets/brand/amperon-logo.svg" alt="Amperon Cables" class="logo-img"></a>
+  <ul class="nav-links">
+    <li><a href="/amperon-cables/#products">Products</a></li>
+    <li><a href="/amperon-cables/#why">Why Us</a></li>
+    <li><a href="/amperon-cables/#certs">Certifications</a></li>
+    <li><a href="/amperon-cables/#blog">Insights</a></li>
+    <li><a href="/amperon-cables/#quote" class="nav-cta">Get Quote</a></li>
+  </ul>
+</nav>
+
+<section class="article-hero">
+  <div class="breadcrumb"><a href="/amperon-cables/">Home</a> &rsaquo; <a href="/amperon-cables/#blog">Blog</a> &rsaquo; Cable Sizing Guide</div>
+  <span class="category-tag">Technical Guide</span>
+  <h1>Cable Sizing Guide: How to Calculate the Right Cross-Section for Power Cables</h1>
+  <div class="article-meta">May 30, 2026 &middot; Amperon Cables Engineering Team</div>
+</section>
+
+<article class="article-body">
+  <p>Selecting the correct cable cross-section is one of the most consequential decisions in any electrical installation. Size it too small and you risk overheating, insulation failure, and fire. Size it too large and you waste money on copper or aluminium that adds no value. This guide walks through the complete cable sizing methodology used by electrical engineers worldwide, based on IEC 60364-5-52 and BS 7671, with worked examples you can apply directly to your project.</p>
+
+  <h2>The Three Criteria That Determine Cable Size</h2>
+  <p>Every cable sizing decision must satisfy three independent requirements. All three must pass — the most demanding one dictates the final cable size:</p>
+  <ol>
+    <li><strong>Ampacity (current-carrying capacity):</strong> The cable must carry the full load current continuously without exceeding its rated conductor temperature, accounting for installation conditions that reduce heat dissipation.</li>
+    <li><strong>Voltage drop:</strong> The voltage at the load must remain within acceptable limits. Excessive voltage drop wastes energy, causes motors to run hot, and can prevent equipment from starting.</li>
+    <li><strong>Short-circuit withstand:</strong> In the event of a fault, the cable must survive the thermal stress of the fault current for the time it takes the protective device to clear it. If the conductor cross-section is too small, the insulation melts or the conductor itself fuses before the breaker trips.</li>
+  </ol>
+  <p>Many engineers size by ampacity and forget the other two. That mistake accounts for a significant share of cable failures in the field.</p>
+
+  <div class="highlight-box">
+    <p><strong>Rule of thumb:</strong> Ampacity governs short runs. Voltage drop governs long runs (typically over 100&ndash;150m for LV circuits). Short-circuit withstand rarely governs at LV but becomes critical at MV and in installations close to large transformers.</p>
+  </div>
+
+  <h2>Step 1: Determine the Load Current</h2>
+  <p>Everything starts with knowing how much current the cable must carry. The calculation depends on the circuit type and load characteristics:</p>
+
+  <h3>Three-Phase AC Circuits</h3>
+  <p>The standard formula for a balanced three-phase load:</p>
+  <p><strong>I = P / (&radic;3 &times; V &times; cos &phi;)</strong></p>
+  <p>Where: I = line current (A), P = load power (W), V = line-to-line voltage (V), cos &phi; = load power factor.</p>
+
+  <h3>Single-Phase AC Circuits</h3>
+  <p><strong>I = P / (V &times; cos &phi;)</strong></p>
+  <p>Where V is the phase-to-neutral voltage.</p>
+
+  <h3>Worked Example: 100kW Motor</h3>
+  <p>A three-phase 400V motor rated at 100kW, power factor 0.85:</p>
+  <p><strong>I = 100,000 / (&radic;3 &times; 400 &times; 0.85) = 100,000 / 588.9 = 169.8 A</strong></p>
+  <p>Round to <strong>170 A</strong>. This is the continuous full-load current the cable must carry under normal operation. Note that motors draw higher starting current (typically 6&ndash;8&times; FLC), but this is transient and handled by the overload protection, not the cable sizing calculation.</p>
+
+  <h2>Step 2: Apply Derating Factors</h2>
+  <p>The current rating you see in manufacturer datasheets is based on ideal conditions: a single cable in free air at 30&deg;C ambient. Real installations are rarely ideal. IEC 60364-5-52 defines derating factors that reduce the effective ampacity to account for real-world conditions.</p>
+
+  <h3>Installation Method (C<sub>i</sub>)</h3>
+  <p>How the cable is installed determines how well it dissipates heat. A cable in free air runs coolest. The same cable buried underground or enclosed in conduit runs hotter because heat cannot escape. IEC 60364-5-52 Table A.52.3 defines reference installation methods. Common values:</p>
+  <table>
+    <tr><th>Installation Method</th><th>Typical Derating Factor</th></tr>
+    <tr><td>Clipped direct to a wall, in free air (Method C)</td><td>1.00 (baseline)</td></tr>
+    <tr><td>In conduit or trunking (Method B1/B2)</td><td>0.85&ndash;0.90</td></tr>
+    <tr><td>Buried directly in ground (Method D)</td><td>0.75&ndash;0.85</td></tr>
+    <tr><td>In enclosed cable tray (perforated)</td><td>0.90</td></tr>
+    <tr><td>In thermal insulation (stud wall with insulation)</td><td>0.50&ndash;0.70</td></tr>
+  </table>
+
+  <h3>Ambient Temperature (C<sub>a</sub>)</h3>
+  <p>Cable ampacity tables assume a 30&deg;C ambient. Higher ambient temperatures reduce the thermal budget between the conductor and its surroundings. For XLPE cable (90&deg;C rated) at 40&deg;C ambient, the derating factor C<sub>a</sub> is approximately 0.91. At 50&deg;C, it drops to 0.82.</p>
+
+  <h3>Grouping Factor (C<sub>g</sub>)</h3>
+  <p>When multiple circuits share the same conduit, trunking, or trench, mutual heating reduces each cable's capacity. For two circuits touching, C<sub>g</sub> &asymp; 0.80. For four circuits, C<sub>g</sub> &asymp; 0.65. For ten circuits, C<sub>g</sub> drops to approximately 0.50. Spacing cables apart improves the grouping factor considerably.</p>
+
+  <h3>Putting It Together: Worked Example</h3>
+  <p>Continuing with our 170 A motor load. Installation: cable in perforated tray (C<sub>i</sub> = 0.90), ambient temperature 40&deg;C (C<sub>a</sub> = 0.91), four circuits on the tray (C<sub>g</sub> = 0.75).</p>
+  <p><strong>Required cable rating = I<sub>load</sub> / (C<sub>i</sub> &times; C<sub>a</sub> &times; C<sub>g</sub>)</strong></p>
+  <p><strong>= 170 / (0.90 &times; 0.91 &times; 0.75) = 170 / 0.614 = 276.9 A</strong></p>
+  <p>The cable must have a base (tabulated) ampacity of at least <strong>277 A</strong> — a 63% increase over the 170 A load current. This is why ignoring derating factors is dangerous: a cable selected for 170 A without derating would run far beyond its safe operating temperature in this installation.</p>
+
+  <div class="highlight-box">
+    <p><strong>Common pitfall:</strong> Some engineers multiply derating factors together and then round up, losing precision. Always carry through to the final result before rounding. A rounding error of 0.05 on a combined derating factor of 0.60 can shift the required ampacity by 10&ndash;15 A — enough to change the cable size.</p>
+  </div>
+
+  <h2>Step 3: Select Conductor from Ampacity Tables</h2>
+  <p>With the derated current requirement in hand, consult the ampacity tables in IEC 60364-5-52 (or your national equivalent such as BS 7671 Appendix 4). The table below shows approximate ratings for common copper conductor sizes at 30&deg;C ambient, single circuit in free air:</p>
+
+  <table>
+    <tr><th>Conductor Size (mm&sup2;)</th><th>Cu PVC (70&deg;C), Method C</th><th>Cu XLPE (90&deg;C), Method C</th><th>Al XLPE (90&deg;C), Method C</th></tr>
+    <tr><td>50</td><td>175 A</td><td>210 A</td><td>165 A</td></tr>
+    <tr><td>70</td><td>225 A</td><td>265 A</td><td>210 A</td></tr>
+    <tr><td>95</td><td>275 A</td><td>325 A</td><td>255 A</td></tr>
+    <tr><td>120</td><td>315 A</td><td>375 A</td><td>295 A</td></tr>
+    <tr><td>150</td><td>360 A</td><td>425 A</td><td>340 A</td></tr>
+    <tr><td>185</td><td>410 A</td><td>485 A</td><td>385 A</td></tr>
+    <tr><td>240</td><td>480 A</td><td>565 A</td><td>450 A</td></tr>
+    <tr><td>300</td><td>550 A</td><td>645 A</td><td>515 A</td></tr>
+  </table>
+  <p style="font-size:0.82rem;color:var(--gray-400)">Values are approximate for reference. Always use the manufacturer's datasheet or the latest edition of your applicable standard for formal design.</p>
+
+  <h3>Selection for Our Worked Example (277 A Required)</h3>
+  <p>From the table above, a <strong>185mm&sup2; copper XLPE</strong> cable provides 485 A tabulated rating — comfortably above the 277 A derated requirement. A 95mm&sup2; copper XLPE at 325 A would also meet the 277 A requirement with margin. If using PVC insulation, 150mm&sup2; at 360 A works; 120mm&sup2; at 315 A is close but acceptable.</p>
+  <p>If aluminium conductors are being considered for cost savings: 120mm&sup2; Al XLPE at 295 A meets the 277 A requirement, but 95mm&sup2; Al XLPE at 255 A does not. Aluminium typically requires one or two sizes larger than copper for the same current. Weigh the material cost saving against the larger cable size, increased bending radius, and termination requirements — our <a href="copper-vs-aluminium-conductors.html">Copper vs Aluminium guide</a> covers this trade-off in depth.</p>
+
+  <h2>Step 4: Voltage Drop Check</h2>
+  <p>Voltage drop is the silent cable sizing criterion. Even if the cable runs cool, excessive voltage drop can cause equipment malfunction — motors run slower and hotter, contactors may drop out, and energy costs rise due to I&sup2;R losses. IEC 60364-5-52 recommends a maximum 3% voltage drop for lighting circuits and 5% for power circuits from the supply origin.</p>
+
+  <h3>The Formula</h3>
+  <p>For three-phase circuits using manufacturer-published mV/A/m data:</p>
+  <p><strong>&Delta;V = (&radic;3 &times; mV/A/m &times; I &times; L) / 1000</strong></p>
+  <p>Where: mV/A/m is the tabulated voltage drop in millivolts per amp per metre, I is the load current (A), and L is the one-way cable length (m).</p>
+
+  <h3>Worked Example (continued)</h3>
+  <p>Our 170 A motor load, 185mm&sup2; copper XLPE cable, cable run length 100 m. From manufacturer tables, mV/A/m for 185mm&sup2; Cu at pf 0.85 &asymp; 0.22 mV/A/m:</p>
+  <p><strong>&Delta;V = (&radic;3 &times; 0.22 &times; 170 &times; 100) / 1000 = 6.48 V</strong></p>
+  <p><strong>% drop = (6.48 / 400) &times; 100 = 1.62%</strong></p>
+  <p>This is well within the 5% limit. The 185mm&sup2; cable passes comfortably on voltage drop.</p>
+  <p>Now consider the same load at a 300 m run — not unusual for a large industrial site or a pump station. With 300 m: &Delta;V = 19.4 V = 4.86%. Still within 5%, but approaching the limit. At 400 m: &Delta;V = 25.9 V = 6.48% — this exceeds the 5% limit. The solution is to step up to 240mm&sup2; (mV/A/m &asymp; 0.175) and recalculate: &Delta;V = 20.6 V = 5.16% at 400 m, still marginal. Go to 300mm&sup2; (mV/A/m &asymp; 0.140): &Delta;V = 16.5 V = 4.12% — comfortably within the limit.</p>
+  <p>For a deeper treatment of voltage drop calculations including single-phase, DC circuits, and power factor effects, see our <a href="cable-voltage-drop-calculation-guide.html">Voltage Drop Calculation Guide</a>.</p>
+
+  <div class="highlight-box">
+    <p><strong>Design tip:</strong> When voltage drop governs the cable size (common for runs over 100&ndash;150m), consider whether a higher operating voltage would be more economical. Running at 690V instead of 400V reduces current by 42% for the same load power, dramatically reducing voltage drop and potentially allowing a smaller cable cross-section.</p>
+  </div>
+
+  <h2>Step 5: Short-Circuit Withstand Check</h2>
+  <p>Under short-circuit conditions, the cable conductor temperature rises rapidly. The energy let-through before the protective device clears the fault must not raise the conductor temperature beyond the insulation's short-circuit rating (160&deg;C for PVC, 250&deg;C for XLPE). The adiabatic equation determines the minimum conductor cross-section that will survive the fault:</p>
+  <p><strong>S = (I<sub>sc</sub> &times; &radic;t) / K</strong></p>
+  <p>Where: S = minimum conductor cross-section (mm&sup2;), I<sub>sc</sub> = prospective short-circuit current (A), t = fault clearing time (seconds), K = material constant.</p>
+  <p>The K factor depends on conductor material and insulation type. For copper conductors: K = 143 for XLPE insulation, K = 115 for PVC insulation. For aluminium conductors: K = 94 for XLPE, K = 76 for PVC.</p>
+
+  <h3>Worked Example</h3>
+  <p>Our 185mm&sup2; copper XLPE cable. Assume a 25 kA (25,000 A) prospective fault current at the cable origin, with a circuit breaker clearing time of 0.2 seconds:</p>
+  <p><strong>S = (25,000 &times; &radic;0.2) / 143 = (25,000 &times; 0.447) / 143 = 11,180 / 143 = 78.2 mm&sup2;</strong></p>
+  <p>The minimum cross-section to survive this fault thermally is approximately 78mm&sup2;. Our 185mm&sup2; cable passes with a wide margin. This is typical for LV circuits — short-circuit withstand rarely governs the cable size. However, in MV installations (where fault currents of 25&ndash;40 kA are common) or for cables directly connected to large transformers (low impedance source, high fault level), the short-circuit check can become the deciding factor.</p>
+
+  <table>
+    <tr><th>Scenario</th><th>I<sub>sc</sub> (kA)</th><th>t (s)</th><th>Insulation</th><th>Min S (mm&sup2;)</th></tr>
+    <tr><td>LV motor feeder</td><td>25</td><td>0.2</td><td>XLPE Cu</td><td>78</td></tr>
+    <tr><td>LV distribution, close to 2MVA transformer</td><td>50</td><td>0.2</td><td>XLPE Cu</td><td>156</td></tr>
+    <tr><td>MV feeder, 11kV</td><td>31.5</td><td>0.5</td><td>XLPE Cu</td><td>156</td></tr>
+    <tr><td>Generator outgoing cable</td><td>15</td><td>0.1</td><td>XLPE Al</td><td>50</td></tr>
+  </table>
+
+  <h2>Common Mistakes in Cable Sizing</h2>
+  <p>Drawing on our experience with procurement engineers and electrical contractors worldwide, here are the mistakes we see most frequently:</p>
+  <ul>
+    <li><strong>Skipping derating factors entirely.</strong> Selecting a cable based on the tabulated free-air ampacity when the cable will be buried alongside three other circuits. The cable will overheat and its service life will be shortened — possibly dramatically.</li>
+    <li><strong>Ignoring voltage drop on long runs.</strong> For cable runs over 150m at LV, voltage drop almost always dictates the size. Sizing by ampacity alone on a 300m pump feeder will produce a cable that works — briefly.</li>
+    <li><strong>Using the wrong temperature rating.</strong> Assuming XLPE ampacity values for a PVC cable, or vice versa. The 20&deg;C temperature rating difference produces a 15&ndash;25% ampacity gap. Consult our <a href="xlpe-vs-pvc-cable-insulation-comparison.html">XLPE vs PVC comparison</a> for detailed guidance.</li>
+    <li><strong>Mixing copper and aluminium sizing tables.</strong> An aluminium conductor needs approximately 1.6&times; the cross-section of copper for the same ampacity. Using a copper table to select an aluminium cable will produce a dangerously undersized conductor.</li>
+    <li><strong>Forgetting to check both normal and fault conditions.</strong> A cable sized for normal load may fail thermally during a fault if the protective device is slow. This is especially relevant for backup protection schemes and generator-fed circuits.</li>
+    <li><strong>Applying derating factors incorrectly.</strong> Some standards list derating factors that are already combined for specific installation methods. Applying an additional factor on top produces an over-engineered (and overpriced) cable. Read the standard carefully.</li>
+    <li><strong>Neglecting harmonic loads.</strong> In installations with significant non-linear loads (VSDs, UPS systems, data centres), the neutral conductor may carry harmonic currents equal to or exceeding the phase currents. The neutral may need to be sized larger than the phase conductors, or a double-neutral configuration specified. Standard sizing methodology assumes sinusoidal currents.</li>
+  </ul>
+
+  <h2>Online Tools and When to Ask an Engineer</h2>
+  <p>Several cable manufacturers offer online sizing calculators that automate the lookup of ampacity tables and derating factors. These are useful for straightforward LV installations and can save time during preliminary design. However, automated tools have limitations: they assume standard installation methods, they may not account for unusual ambient conditions (high solar radiation, proximity to steam lines), they rarely check short-circuit withstand, and they cannot exercise engineering judgement about which derating factors apply.</p>
+  <p>For any of the following, you should seek an engineer's review rather than relying on software alone:</p>
+  <ul>
+    <li>MV and HV installations (6kV and above)</li>
+    <li>Installations with unusual ambient conditions — extreme heat, chemical exposure, or high UV</li>
+    <li>Multiple parallel cables per phase — current sharing and mutual heating require detailed thermal analysis</li>
+    <li>Harmonic-rich environments where neutral sizing is non-trivial</li>
+    <li>Projects where voltage drop, ampacity, and short-circuit requirements produce conflicting size recommendations — the trade-off needs experienced judgement</li>
+    <li>Cable systems operating near their thermal limit — a small change in installation conditions can tip the balance</li>
+  </ul>
+  <p>At Amperon, our engineering team includes voltage drop, derating, and short-circuit checks in every quotation package. You receive the cable specification backed by the calculations — not just a price.</p>
+
+  <div class="cta-box">
+    <h3>Need Help with Cable Sizing? Contact Us on WhatsApp</h3>
+    <p>Send us your load schedule, cable run lengths, and installation conditions. Our engineering team will verify the sizing and provide a complete quotation with all supporting calculations — typically within 2 hours.</p>
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I%20need%20help%20with%20cable%20sizing%20calculations%20for%20my%20project.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Get Engineering Support
+    </a>
+  </div>
+
+  <h2>Related Articles</h2>
+  <div class="related-grid">
+    <a href="cable-voltage-drop-calculation-guide.html" class="related-card"><h4>Voltage Drop Calculation Guide &rarr;</h4><p>In-depth treatment of voltage drop formulas, mV/A/m tables, and worked examples for LV and MV circuits.</p></a>
+    <a href="copper-vs-aluminium-conductors.html" class="related-card"><h4>Copper vs Aluminium Conductors &rarr;</h4><p>How conductor material choice affects cable sizing, cost, weight, and termination requirements.</p></a>
+    <a href="xlpe-vs-pvc-cable-insulation-comparison.html" class="related-card"><h4>XLPE vs PVC Insulation Comparison &rarr;</h4><p>Temperature ratings, ampacity differences, and how insulation type influences cable size selection.</p></a>
+    <a href="iec-cable-standards-explained.html" class="related-card"><h4>IEC Cable Standards Explained &rarr;</h4><p>What IEC 60502 and IEC 60364 specify for cable construction, testing, and installation requirements.</p></a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">AMPER<span>ON</span> CABLES</div>
+      <p class="footer-tagline">Factory-direct B2B power cable manufacturer.</p>
+      <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20to%20inquire%20about%20your%20cables.&type=phone_number&app_absent=0" class="footer-wa-link" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Blog</div>
+      <ul class="footer-links">
+        <li><a href="buyer-guide-how-to-choose-power-cable.html">Buyer's Guide</a></li>
+        <li><a href="armoured-vs-unarmoured-cable-guide.html">Armoured vs Unarmoured</a></li>
+        <li><a href="iec-cable-standards-explained.html">IEC Standards</a></li>
+        <li><a href="copper-vs-aluminium-conductors.html">Copper vs Aluminium</a></li>
+        <li><a href="cable-sizing-calculation-guide.html">Cable Sizing Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="/amperon-cables/">Home</a></li>
+        <li><a href="/amperon-cables/#products">Products</a></li>
+        <li><a href="/amperon-cables/#why">Why Us</a></li>
+        <li><a href="/amperon-cables/#certs">Certifications</a></li>
+        <li><a href="/amperon-cables/#quote">Get Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:xuke@link-jl.com">xuke@link-jl.com</a></li>
+        <li><a href="tel:+8613201571341">+86 132 0157 1341</a></li>
+        <li>Export Department, China</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Amperon Cables. All rights reserved.</div>
+</footer>
+
+<a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+</a>
+
+</body>
+</html>

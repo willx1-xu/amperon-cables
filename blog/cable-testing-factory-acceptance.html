@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cable Testing Guide: Factory & Site Acceptance Tests Explained | Amperon Cables</title>
+  <link rel="canonical" href="https://willx1-xu.github.io/amperon-cables/blog/cable-testing-factory-acceptance.html">
+  <meta name="description" content="Complete guide to power cable testing — routine factory tests, type tests, and site acceptance tests. Understand what tests your cables should pass before shipment and after installation." />
+  <meta name="keywords" content="cable testing, factory acceptance test, cable routine test, type test cable, partial discharge test, VLF cable test, insulation resistance test, cable test certificates, IEC 60502 testing, site acceptance test cable" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Cable Testing Guide: Factory & Site Acceptance Tests Explained">
+  <meta property="og:description" content="Complete guide to power cable testing — routine factory tests, type tests, and site acceptance tests. Understand what tests your cables should pass before shipment and after installation.">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cable Testing Procedures: Factory Acceptance Tests & Site Tests Every Buyer Should Know",
+    "datePublished": "2026-05-30",
+    "dateModified": "2026-05-30",
+    "author": { "@type": "Organization", "name": "Amperon Cables" },
+    "publisher": { "@type": "Organization", "name": "Amperon Cables" },
+    "articleSection": "Technical Guide",
+    "description": "Complete guide to power cable testing — routine factory tests, type tests, and site acceptance tests. Understand what tests your cables should pass before shipment and after installation."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://willx1-xu.github.io/amperon-cables/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://willx1-xu.github.io/amperon-cables/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "Cable Testing Guide: Factory & Site Acceptance Tests", "item": "https://willx1-xu.github.io/amperon-cables/blog/cable-testing-factory-acceptance.html" }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1A365D; --navy-dark: #0F2440; --navy-light: #234B7A;
+      --gold: #C9A84C; --gold-light: #E8C96A; --gold-pale: #FBF6E8;
+      --white: #FFFFFF; --gray-50: #F8FAFC; --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0; --gray-300: #CBD5E1; --gray-400: #94A3B8;
+      --gray-500: #64748B; --gray-600: #475569; --gray-700: #334155;
+      --gray-800: #1E293B; --gray-900: #0F172A; --whatsapp: #25D366;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #fff; color: var(--gray-800); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6%; height: 64px;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200); box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .logo { display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--navy); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; letter-spacing: 1.5px; }
+    .logo-img { height: 32px; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links > li > a { color: var(--gray-600); text-decoration: none; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; transition: color 0.2s; padding: 4px 0; }
+    .nav-links > li > a:hover { color: var(--navy); }
+    .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 20px !important; border-radius: 6px; }
+    @media(max-width:768px){ .nav-links { display: none; } }
+    .article-hero { background: var(--navy); padding: 120px 6% 56px; color: #fff; }
+    .article-hero .breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .article-hero .breadcrumb a { color: var(--gold-light); text-decoration: none; }
+    .article-hero .category-tag { display: inline-block; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 760px; }
+    .article-hero .article-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 16px; }
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 6% 40px; }
+    .article-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--gray-900); margin: 44px 0 16px; }
+    .article-body h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--gray-800); margin: 32px 0 12px; }
+    .article-body p { color: var(--gray-600); font-size: 1rem; line-height: 1.85; margin-bottom: 18px; }
+    .article-body ul, .article-body ol { color: var(--gray-600); font-size: 0.95rem; line-height: 1.85; padding-left: 22px; margin-bottom: 20px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 0.9rem; border: 1px solid var(--gray-200); border-radius: 8px; overflow: hidden; }
+    .article-body th { background: var(--navy); color: #fff; padding: 12px 16px; text-align: left; font-size: 0.8rem; font-weight: 700; }
+    .article-body td { padding: 10px 16px; border-bottom: 1px solid var(--gray-100); color: var(--gray-700); }
+    .article-body tr:nth-child(even) td { background: var(--gray-50); }
+    .highlight-box { background: var(--gold-pale); border-left: 4px solid var(--gold); padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .highlight-box p { margin: 0; color: var(--gray-700); font-size: 0.92rem; }
+    .cta-box { background: var(--navy); border-radius: 14px; padding: 40px; text-align: center; margin: 48px 0; color: #fff; }
+    .cta-box h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 12px; }
+    .cta-box p { color: rgba(255,255,255,0.65); margin-bottom: 24px; }
+    .btn-wa { background: var(--whatsapp); color: #fff; padding: 16px 36px; border-radius: 7px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(37,211,102,0.3); transition: all 0.25s; }
+    .btn-wa:hover { background: #20bd5a; transform: translateY(-2px); }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
+    @media(max-width:768px){ .related-grid { grid-template-columns: 1fr; } }
+    .related-card { border: 1px solid var(--gray-200); border-radius: 10px; padding: 22px; text-decoration: none; color: inherit; transition: all 0.25s; display: block; }
+    .related-card:hover { border-color: var(--navy); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .related-card h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; color: var(--gray-900); margin-bottom: 6px; }
+    .related-card p { font-size: 0.82rem; color: var(--gray-500); margin: 0; }
+    footer { background: var(--gray-900); padding: 48px 6% 24px; color: #fff; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
+    @media(max-width:768px){ .footer-top { grid-template-columns: 1fr 1fr; } }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+    .footer-logo span { color: var(--gold); }
+    .footer-tagline { color: var(--gray-400); font-size: 0.84rem; line-height: 1.7; max-width: 260px; margin-bottom: 14px; }
+    .footer-wa-link { display: inline-flex; align-items: center; gap: 6px; background: var(--whatsapp); color: #fff; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.8rem; }
+    .footer-col-title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px; }
+    .footer-links { display: flex; flex-direction: column; gap: 8px; list-style: none; padding: 0; }
+    .footer-links a { color: var(--gray-500); text-decoration: none; font-size: 0.84rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; color: var(--gray-500); font-size: 0.76rem; }
+    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 6px 24px rgba(37,211,102,0.35); display: flex; align-items: center; justify-content: center; background: #25D366; text-decoration: none; transition: transform 0.3s; }
+    .wa-float:hover { transform: scale(1.1); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="/amperon-cables/" class="logo"><img src="../assets/brand/amperon-logo.svg" alt="Amperon Cables" class="logo-img"></a>
+  <ul class="nav-links">
+    <li><a href="/amperon-cables/#products">Products</a></li>
+    <li><a href="/amperon-cables/#why">Why Us</a></li>
+    <li><a href="/amperon-cables/#certs">Certifications</a></li>
+    <li><a href="/amperon-cables/#blog">Insights</a></li>
+    <li><a href="/amperon-cables/#quote" class="nav-cta">Get Quote</a></li>
+  </ul>
+</nav>
+
+<section class="article-hero">
+  <div class="breadcrumb"><a href="/amperon-cables/">Home</a> &rsaquo; <a href="/amperon-cables/#blog">Blog</a> &rsaquo; Cable Testing Guide</div>
+  <span class="category-tag">Technical Guide</span>
+  <h1>Cable Testing Procedures: Factory Acceptance Tests &amp; Site Tests Every Buyer Should Know</h1>
+  <div class="article-meta">May 30, 2026 &middot; Amperon Cables Technical Team</div>
+</section>
+
+<article class="article-body">
+  <p>Cable testing is not a formality — it is the only objective proof that the product you are buying meets its specification. A cable that looks right on the drum can still carry a hidden manufacturing defect: a void in the XLPE insulation invisible to the naked eye, a broken conductor strand inside a perfectly intact sheath, or moisture that entered through an improperly sealed cable end during storage. Testing catches these issues before the cable is installed, when replacement cost and delay are still the manufacturer's problem. Once a defective cable is pulled into a duct, terminated, and buried, the cost of replacement can exceed the original cable cost by a factor of ten.</p>
+  <p>This guide covers the three distinct categories of power cable testing that every buyer, specifier, and project manager should understand: <strong>routine factory tests</strong> performed on every production length before shipment, <strong>type tests</strong> that qualify a cable design against the applicable standard, and <strong>site acceptance tests</strong> that confirm the cable's integrity after transport, storage, and installation. Knowing which tests apply, what the pass criteria are, and what documentation to demand puts you in control of quality — before the cable leaves the factory and before you energise the circuit.</p>
+
+  <h2>Routine Factory Tests (IEC 60502-1, Clause 16)</h2>
+  <p>Routine tests are non-negotiable. They are performed on <strong>every production length</strong> before it leaves the factory — no exceptions, no statistical sampling, no shortcuts. If a drum fails a routine test, that drum is either reworked or scrapped and a replacement is produced. The test results for each drum are recorded on a routine test certificate that should accompany every shipment. The core routine tests mandated for LV and MV power cables under IEC 60502-1 are summarised below.</p>
+
+  <table>
+    <tr><th>Test</th><th>Standard Reference</th><th>Key Pass Criterion</th></tr>
+    <tr><td>Conductor Resistance</td><td>IEC 60228</td><td>DC resistance &le; specified max at 20&deg;C</td></tr>
+    <tr><td>High Voltage (Spark Test)</td><td>IEC 60502-1 Cl. 16</td><td>No breakdown at 3.5kV AC / 8.5kV DC for 5 min</td></tr>
+    <tr><td>Insulation Resistance</td><td>IEC 60502-1 Cl. 16</td><td>&ge; 100 M&Omega;&middot;km at 20&deg;C (LV)</td></tr>
+  </table>
+
+  <h3>Conductor Resistance Test (IEC 60228)</h3>
+  <p>The DC resistance of the conductor is measured at a known ambient temperature and corrected mathematically to the reference temperature of 20&deg;C. The measured and corrected value must not exceed the maximum resistance specified in IEC 60228 for the given conductor material, nominal cross-sectional area, and class (Class 1 solid, Class 2 stranded, or Class 5 flexible). For example, a 185mm&sup2; Class 2 stranded copper conductor must measure no more than 0.0991 &Omega;/km at 20&deg;C. An aluminium conductor of the same cross-section must not exceed 0.1640 &Omega;/km.</p>
+  <p>This test serves two critical verification purposes. First, it confirms that the correct conductor material was used — copper where copper was specified, aluminium where aluminium was specified. A simple mix-up at the stranding machine can put copper cost into an aluminium cable or vice versa. Second, and more importantly for the buyer, it verifies that the actual cross-sectional area of the conductor is genuine. A cable sold as 185mm&sup2; that measures with the resistance of a 170mm&sup2; conductor will fail. Since current-carrying capacity and voltage drop are directly governed by conductor resistance, this test is arguably the single most important quality gate in the routine testing suite.</p>
+
+  <h3>High Voltage Test (Spark Test)</h3>
+  <p>An AC voltage of 3.5kV — or alternatively a DC voltage of 8.5kV — is applied between the conductor and the earthed metallic layer (copper tape screen, wire screen, or armour) for a duration of 5 minutes. For MV cables rated above 3.6/6kV, the test voltage is higher: the standard formula is 2.5Uo + 2kV, applied for 5 minutes, where Uo is the rated power-frequency voltage between conductor and earth. No flashover, puncture, or insulation breakdown of any kind is permitted during the test.</p>
+  <p>A cable that passes this withstand test has insulation free of gross defects — cuts, inclusions of foreign material, voids large enough to initiate immediate breakdown under voltage stress. It does not, however, guarantee the absence of smaller defects that could grow over years of service. That is the role of the partial discharge test covered under type testing.</p>
+
+  <h3>Insulation Resistance Test</h3>
+  <p>A stabilised DC voltage — typically 500V for LV cables and 2,500V for MV cables — is applied between the conductor and the earth screen or armour using a calibrated insulation resistance tester (commonly referred to by the trade name "Megger", though any calibrated instrument meeting the standard is acceptable). The resulting leakage current through the insulation is measured and converted to a resistance value.</p>
+  <p>At the reference temperature of 20&deg;C, the minimum acceptable insulation resistance for LV power cables is 100 M&Omega;&middot;km. For MV XLPE-insulated cables, values of 1,000 M&Omega;&middot;km or higher are typical for a well-manufactured production length, and values in the range of 5,000&ndash;10,000 M&Omega;&middot;km are common for new cable. Insulation resistance is strongly temperature-dependent: the value approximately halves for every 10&deg;C increase in temperature. This is why every legitimate test report states the temperature at which the measurement was taken, and why comparing IR values across different temperatures without applying the standard temperature correction formula is meaningless. A cable that reads 50 M&Omega;&middot;km at 40&deg;C may be perfectly acceptable once corrected to 20&deg;C.</p>
+
+  <h2>Type Tests (Design Qualification)</h2>
+  <p>Unlike routine tests, type tests are performed on <strong>representative samples</strong> of a cable design — not on every production drum. Their purpose is to prove that a given cable construction (insulation material and thickness, screen design, armour configuration, sheath compound) meets all requirements of the applicable standard across electrical, mechanical, thermal, and fire-performance dimensions. A full IEC 60502-1 type test programme can cost tens of thousands of dollars and take several weeks to complete. It is typically performed once when a design is first qualified, and repeated only when the design changes materially or when the certifying body requires periodic requalification — usually every 3 to 5 years.</p>
+  <p>When you request type test certificates from a manufacturer, you are asking for documentary evidence that this cable design has been independently tested and validated. A type test certificate that is ten years old, from a lab you cannot verify, for a slightly different construction — this is not the same as a current, relevant type test report. Always check the date, the laboratory accreditation, and whether the tested sample matches the cable you are buying.</p>
+
+  <h3>Partial Discharge Test (MV Cables)</h3>
+  <p>Partial discharge (PD) testing is the definitive electrical quality gate for MV cables rated above 1.8/3kV. A partial discharge is a localised dielectric breakdown occurring within a microscopic void, crack, or contaminant particle inside the XLPE insulation — too small to cause immediate failure, but progressive under the sustained stress of operating voltage combined with thermal cycling. Each discharge event erodes the insulation slightly more, and over months or years the defect grows into a full-thickness insulation failure.</p>
+  <p>The test applies a voltage of 1.73Uo (where Uo is the phase-to-earth voltage rating) to the cable sample and measures any discharge activity using a calibrated PD detector, with results expressed in picocoulombs (pC). The IEC 60502-1 pass criterion is unequivocal: the magnitude of any partial discharge must not exceed 10pC at 1.73Uo. A well-manufactured, void-free XLPE cable will typically show less than 2pC of discharge — and often zero detectable discharge above the noise floor of the measurement system, which is typically around 1&ndash;2pC in a properly shielded laboratory. A cable that produces PD readings above 10pC has internal voids that will grow over time and is unfit for installation in any circuit where reliability matters. There is no field repair for PD — the affected length must be cut out and replaced.</p>
+
+  <h3>Bending Test</h3>
+  <p>The cable is bent around a cylindrical mandrel whose diameter is a specified multiple of the cable's overall diameter — typically 3 times the overall diameter for the test in the more severe bending direction. After bending, the cable is straightened, and the cycle is repeated three times. Following this mechanical cycling, the cable is subjected to the full high-voltage withstand test. It must pass with no breakdown.</p>
+  <p>This test simulates the mechanical stresses the cable will experience during installation: being pulled around bends in conduit or tray, wound onto and off drums, and handled on site. It is especially important for armoured cables (where the armour wires can shift and impinge on the underlying bedding), multicore cables with short lay lengths (where core movement during bending can distort the insulation), and any cable destined for an installation with a demanding pull route involving multiple changes of direction.</p>
+
+  <h3>Flame Propagation Tests (IEC 60332-1 and IEC 60332-3)</h3>
+  <p>Fire performance testing is conducted in two tiers. IEC 60332-1 evaluates a single vertical cable sample: a calibrated gas burner is applied for a specified duration depending on the cable diameter, then removed. The cable must self-extinguish, and the extent of damage (char height) measured from the flame application point must not exceed a specified limit — 425mm for a standard sample, or 540mm for cables with an overall diameter above 50mm.</p>
+  <p>IEC 60332-3 is a far more demanding test that evaluates <strong>bunched cables</strong> mounted on a vertical ladder. Multiple cable lengths are arranged in a defined configuration and exposed to a large burner for 20 or 40 minutes depending on the category (A, B, C, or D). This simulates a real installation where cables are grouped in trays or risers. It is significantly harder to pass than the single-cable test because heat transfer between adjacent burning cables can sustain combustion even where each cable individually would self-extinguish. Cables marketed as "flame retardant" or "FR" should carry an IEC 60332-1 or IEC 60332-3 classification appropriate to the installation environment.</p>
+
+  <h3>Smoke Density Test (IEC 61034)</h3>
+  <p>For LSZH (Low Smoke Zero Halogen) cables, smoke emission during a fire is a critical safety parameter — in building fires, toxic smoke inhalation kills more people than burns. In this test, a cable sample is burned inside a closed chamber of defined volume, and a collimated light beam measures the progressive reduction in light transmission through the accumulated smoke. The requirement for LSZH cables: light transmittance must remain at or above 60% throughout the test. A standard PVC-sheathed cable in the same test would typically drop below 20% transmittance — approaching blackout conditions — within minutes. This quantitative difference is what separates "low smoke" from standard PVC sheathing, and the IEC 61034 test report is the objective evidence that a cable sold as LSZH genuinely meets the low-smoke claim.</p>
+
+  <h3>Halogen Acid Gas Test (IEC 60754-2)</h3>
+  <p>When halogen-containing materials — most notably PVC — burn, they release hydrogen chloride (HCl) gas. HCl combines with atmospheric moisture, with water from fire sprinklers, and with the moisture in human respiratory tissue to form hydrochloric acid. The result is a triple threat: corrosion of electronic equipment and metal structures remote from the fire, acute respiratory injury to anyone exposed, and long-term degradation of building infrastructure from acid deposition.</p>
+  <p>The IEC 60754-2 test quantifies this risk. A cable sample is burned in a tube furnace and the evolved gases are bubbled through water. The pH and electrical conductivity of the resulting solution are measured. For a cable to qualify as halogen-free: pH must be &ge;4.3, and conductivity must be &le;10&mu;S/mm. For reference, a standard PVC cable typically produces gas with a pH below 2.0 and conductivity exceeding 50&mu;S/mm — highly acidic, highly conductive, and highly dangerous. This test is the definitive way to verify that a cable sold as "zero halogen" or "LSZH" genuinely contains no halogenated compounds.</p>
+
+  <h3>Thermal Aging Test</h3>
+  <p>The cable sample is placed in an air-circulating oven at a temperature 10&deg;C above its rated maximum continuous conductor temperature — for example, 100&deg;C for cable rated at 90&deg;C normal operation — and held at that temperature continuously for 7 days (168 hours). After aging, the insulation and sheath are stripped from the sample and subjected to tensile testing: tensile strength and elongation at break are measured and compared against identical tests on an unaged sample from the same production batch.</p>
+  <p>The aged sample must retain a specified minimum percentage of its original mechanical properties. For XLPE insulation, the typical requirement is that tensile strength retains at least 75% of the unaged value and elongation at break retains at least 50%. This accelerated aging protocol, developed over decades of empirical correlation, maps approximately to 30&ndash;40 years of thermal exposure at normal operating temperature. It is the experimental basis for the cable's temperature rating printed on the sheath — a cable that cannot survive 7 days at 100&deg;C with adequate property retention cannot legitimately be sold as a 90&deg;C-rated cable.</p>
+
+  <h2>Site Acceptance Tests (After Installation)</h2>
+  <p>Factory testing proves the cable was sound when it left the factory. Site testing proves it is still sound after transport, storage, handling, pulling, and termination. The journey from factory test bench to installed circuit exposes cable to multiple damage mechanisms: crushing if rollers are incorrectly spaced during pulling, kinking if the minimum bend radius is exceeded, sheath cuts from sharp tray edges or backfill stones, moisture ingress through cable ends that were not sealed after the drum was opened, and nicks in the insulation from careless stripping at terminations. None of these would have been present during factory testing.</p>
+  <p>Site acceptance tests catch installation damage <strong>before</strong> the circuit is energised, when repair is still possible at the installer's cost rather than the operator's. Skipping site testing to recover one day on the construction programme is one of the most expensive shortcuts in electrical engineering — a cable fault discovered after energisation can destroy switchgear, cause consequential damage to connected equipment, trigger contractual penalties for delayed handover, and in the worst case, injure personnel.</p>
+
+  <h3>Insulation Resistance Test (Megger Test)</h3>
+  <p>Before any high-voltage test is applied, a Megger (insulation resistance tester) is used to confirm two basic facts: the cable is not short-circuited between cores or to earth, and the insulation resistance is within a reasonable range. The test is performed in sequence: phase-to-phase for all combinations, each phase-to-earth, and between metallic screen/sheath and earth. Results should be compared directly with the factory routine test report for the same drum — a dramatic drop in IR compared with the factory value (accounting for temperature difference) strongly suggests moisture has entered the cable through a damaged sheath, a cut that penetrates to the screen, or an improperly sealed cable end cap. The Megger test is quick, non-destructive, and should always be the first electrical test performed on site before any higher-voltage testing.</p>
+
+  <h3>High Voltage DC Test or VLF Test (MV Cables)</h3>
+  <p>For LV cables, a DC high-voltage test at 1kV to 5kV DC is commonly used for site acceptance and is generally uncontroversial — XLPE-insulated LV cables do not exhibit the space-charge accumulation problems that affect MV cables under DC stress. For MV cables, industry practice has shifted decisively over the past two decades from DC high-voltage testing toward VLF (Very Low Frequency) testing at 0.1Hz.</p>
+  <p>The reason is well-documented: applying sustained DC voltage to XLPE insulation that may contain water trees (microscopic moisture-filled channels that form over years of service in wet environments) causes space charge to accumulate at the tips of the water trees. When the DC voltage is removed, this trapped charge can create localised electrical stress concentrations that far exceed the cable's design stress, triggering immediate breakdown — the test itself damages the cable. VLF testing at 0.1Hz avoids this mechanism because the polarity reversal every 5 seconds (at 0.1Hz) prevents space charge from accumulating to damaging levels, while still providing a meaningful withstand test. The typical VLF test voltage for a new MV cable installation is 3Uo applied continuously for 60 minutes. A successful test — no breakdown during the 60-minute period — means the cable is fit for energisation.</p>
+
+  <h3>Sheath Integrity Test</h3>
+  <p>The outer sheath is the cable's primary defence against environmental attack: moisture, chemicals in soil, mechanical abrasion from vibration against structures. A sheath damaged during pulling — sliced on a sharp cable tray edge, torn from dragging across rough ground, pierced by a stone in backfill material — allows water to reach the metallic screen or armour layer beneath. Once water contacts the metallic layer, corrosion begins and propagates along the cable, potentially over tens of metres, degrading the screen's fault-current capacity and eventually causing screen failure.</p>
+  <p>The sheath integrity test (sometimes called a sheath fault test or oversheath test) applies a DC voltage — typically 5kV to 10kV — to the outer sheath surface using a conductive electrode (a wet sponge, conductive rubber band, or water bath for short lengths), with the underlying metallic layer connected to earth. Any pinhole, cut, score mark, or tear that penetrates the sheath will break down electrically at the defect location, and the resulting current surge is detected. Critical rule for buried cable installations: the sheath test must be performed <strong>before</strong> the trench is backfilled. Once the cable is under 600mm of compacted soil, locating and repairing a sheath fault becomes orders of magnitude more expensive and disruptive.</p>
+
+  <h3>Continuity and Phase Identification</h3>
+  <p>A low-voltage continuity test confirms two things: each core is electrically continuous from one end of the cable to the other (no open-circuit cores from a conductor break during pulling), and the phase marking at the source end corresponds correctly to the phase marking at the load end. Cross-phasing — where L1 at the switchboard connects to L2 at the motor, and L2 connects to L1 — is a common installation error that reverses motor rotation, and in three-phase systems with phase-sensitive protection relays, can cause dangerous fault conditions. The test procedure is simple: a battery-powered continuity tester or a low-voltage AC source is applied to each core in sequence at one end, and voltage presence is verified on the corresponding core at the far end. The test should be repeated after every joint and after every termination.</p>
+
+  <h3>Cable Identification and Route Tracing</h3>
+  <p>For buried or otherwise concealed cable runs — under roads, through ducts, inside building risers — a signal generator injects a traceable audio-frequency or radio-frequency signal onto the cable's metallic screen or a spare core. A handheld receiver at ground level detects the signal and its strength, allowing the operator to trace the cable route with sub-metre accuracy. Route tracing should be documented with GPS coordinates or referenced to fixed structures and recorded on as-built drawings. This documentation ensures that anyone excavating or drilling in the area years or decades later can identify the cable's location and depth, avoiding a cable strike that could cause injury, outage, and expensive repair.</p>
+
+  <h2>Test Certificates You Should Receive</h2>
+  <p>A professional cable manufacturer provides a complete, traceable documentation package with every shipment. Anything substantially less than what is described below is a red flag that warrants investigation before you accept the goods. Here is what constitutes a complete test certificate package:</p>
+  <ul>
+    <li><strong>Routine test report per drum:</strong> A certificate uniquely tied to each drum by its drum number, showing: cable specification and construction details, test date, conductor resistance (measured value, temperature during measurement, temperature-corrected value, and the maximum permitted by the standard), high-voltage test result (applied voltage, duration, and pass/fail outcome), insulation resistance (measured value, temperature during measurement, and temperature-corrected value), and dimensional verification results (insulation thickness, sheath thickness, and overall diameter measured at multiple points). Every field on the report should be populated — blank fields are not acceptable.</li>
+    <li><strong>Type test certificates per cable design:</strong> Full test reports issued by an ISO/IEC 17025 accredited testing laboratory demonstrating that this specific cable design has passed all type tests mandated by the applicable standard. Type test certificates are design-specific, not drum-specific. Verify the date — type test certificates older than 5 years may not reflect the current production process, especially if the factory has changed compound suppliers, extrusion equipment, or manufacturing parameters in the interim.</li>
+    <li><strong>Mill test certificates (MTCs) for conductor raw material:</strong> Certificates from the copper rod or aluminium rod supplier documenting the chemical composition (impurity limits), electrical resistivity, and tensile properties of the conductor metal batch used in production. MTCs close the traceability loop from the smelter to the finished cable.</li>
+    <li><strong>Calibration certificates for test equipment:</strong> Documentary proof that the factory's measuring and test instruments — micro-ohmmeter, high-voltage test set, insulation resistance tester, vernier callipers and micrometres — are calibrated at defined intervals by an accredited calibration laboratory. Measurements from uncalibrated instruments are not reliable evidence of anything.</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p><strong>Red flags when reviewing test certificates:</strong> missing data fields on the report (why was no IR value recorded?), hand-filled reports without instrument serial numbers or calibration references (how do you know the measurement was actually taken?), test values sitting exactly on the specification limit with no natural variation across multiple drums (real measurement data has scatter), and test certificates issued exclusively by the manufacturer's internal laboratory when that laboratory is not ISO/IEC 17025 accredited. A reputable manufacturer will offer third-party witness testing — where an inspector from SGS, Bureau Veritas, or T&Uuml;V is physically present during testing and co-signs the reports. If a supplier refuses or deflects a request for witness testing, consider what they may not want an independent observer to see.</p>
+  </div>
+
+  <h2>How Amperon Handles Testing</h2>
+  <p>Every metre of cable we manufacture is tested. This is not a marketing claim — it is an embedded production requirement supported by documented evidence delivered with every shipment:</p>
+  <ul>
+    <li><strong>100% routine testing:</strong> Every drum that leaves our factory is accompanied by a complete routine test report covering conductor resistance, high-voltage withstand, insulation resistance, and dimensional verification. No cable ships without a test report — there are no exceptions to this rule, regardless of order size or urgency.</li>
+    <li><strong>Type test certificates available on request:</strong> Full IEC 60502-1 type test reports for our standard LV and MV cable ranges are available. If your project requires testing and certification to a specific national standard — BS 5467, AS/NZS 5000.1, NF C 33-220, or others — we can provide the relevant certification or arrange supplementary type testing to your required standard.</li>
+    <li><strong>Third-party witness testing welcomed:</strong> We actively encourage independent inspection. Buyers can arrange witness testing through SGS, Bureau Veritas, T&Uuml;V Rheinland, or any accredited inspection agency of their choice. Our factory and in-house testing laboratory are open to customer audits — schedule a visit and observe the testing process directly.</li>
+    <li><strong>Calibrated laboratory:</strong> Our electrical testing laboratory operates under an ISO 9001 certified quality management system. All test instruments are maintained on a defined calibration schedule with traceability to national standards. Calibration certificates are available on request.</li>
+  </ul>
+  <p>For a complete overview of our quality management system, industry certifications, and product approvals, visit our <a href="../certifications.html">Certifications page</a>. For a detailed explanation of what different cable certifications mean and which ones are relevant to your project requirements, read our <a href="cable-quality-certifications-guide.html">Cable Quality Certifications Guide</a>. If you are specifying LV or MV power cables, our product pages — <a href="../products/lv-power-cables.html">LV Power Cables</a> and <a href="../products/mv-power-cables.html">MV Power Cables</a> — include the testing standards and certification options applicable to each product range.</p>
+
+  <div class="cta-box">
+    <h3>Need test certificates or want to arrange witness testing?</h3>
+    <p>Tell us your cable specification and testing requirements. We will provide the complete test certificate package — routine reports per drum, type test certificates, and third-party witness testing if your project requires it.</p>
+    <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20to%20discuss%20cable%20testing%20requirements%20for%20my%20project.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+      Discuss Testing Requirements
+    </a>
+  </div>
+
+  <h2>Related Articles</h2>
+  <div class="related-grid">
+    <a href="cable-quality-certifications-guide.html" class="related-card"><h4>Cable Quality Certifications Guide &rarr;</h4><p>Understand KEMA, BASEC, TUV, and IEC certifications — what they mean and which ones your project actually needs.</p></a>
+    <a href="iec-cable-standards-explained.html" class="related-card"><h4>IEC Cable Standards Explained &rarr;</h4><p>Breakdown of IEC 60502-1, IEC 60228, and the key standards governing power cable manufacturing and testing.</p></a>
+    <a href="buyer-guide-how-to-choose-power-cable.html" class="related-card"><h4>Power Cable Buyer's Guide &rarr;</h4><p>Complete guide to selecting cable type, size, voltage rating, armour, and sheath for your application.</p></a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">AMPER<span>ON</span> CABLES</div>
+      <p class="footer-tagline">Factory-direct B2B power cable manufacturer.</p>
+      <a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'd%20like%20to%20inquire%20about%20your%20cables.&type=phone_number&app_absent=0" class="footer-wa-link" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Blog</div>
+      <ul class="footer-links">
+        <li><a href="cable-testing-factory-acceptance.html">Cable Testing Guide</a></li>
+        <li><a href="buyer-guide-how-to-choose-power-cable.html">Buyer's Guide</a></li>
+        <li><a href="iec-cable-standards-explained.html">IEC Standards</a></li>
+        <li><a href="copper-vs-aluminium-conductors.html">Copper vs Aluminium</a></li>
+        <li><a href="cable-quality-certifications-guide.html">Certifications Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="/amperon-cables/">Home</a></li>
+        <li><a href="/amperon-cables/#products">Products</a></li>
+        <li><a href="/amperon-cables/#why">Why Us</a></li>
+        <li><a href="/amperon-cables/#certs">Certifications</a></li>
+        <li><a href="/amperon-cables/#quote">Get Quote</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-links">
+        <li><a href="mailto:xuke@link-jl.com">xuke@link-jl.com</a></li>
+        <li><a href="tel:+8613201571341">+86 132 0157 1341</a></li>
+        <li>Export Department, China</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Amperon Cables. All rights reserved.</div>
+</footer>
+
+<a href="https://api.whatsapp.com/send/?phone=8613201571341&text=Hello%20Amperon%2C%20I'm%20interested%20in%20your%20power%20cables.&type=phone_number&app_absent=0" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+</a>
+
+</body>
+</html>
