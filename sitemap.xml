@@ -54,6 +54,56 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- NEW PRODUCT PAGES (2026-05-30) -->
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/solar-pv-dc-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/fire-resistant-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/lszh-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/welding-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/submersible-pump-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/instrumentation-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/bare-overhead-conductors.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://willx1-xu.github.io/amperon-cables/products/trailing-mining-cables.html</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- APPLICATION PAGES -->
   <url>
     <loc>https://willx1-xu.github.io/amperon-cables/applications/mining-cables.html</loc>
